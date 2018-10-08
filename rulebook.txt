@@ -1,0 +1,346 @@
+DESIGN GOALS
+
+Force Improvisation
+    Variety. 
+    Break the default gameplan. Hard choices, sharp contrasts.
+    Randomness builds stories (Hearthstone)
+
+Prefer emergent mechanics
+    Building blocks.
+    Don't make explicity opportunity attack rules...
+    make these rules emerge from the initiative system
+    
+When in doubt, Simplify
+    rule of outliers: one interesting thing is better than ten mediocre ones
+    tighten the gameplay loop
+
+----------------------------
+
+Characters are
+    - a deck of cards, built from some number of tracks
+    - a luck counter
+
+Luck resets per scene.
+It is a PvE mechanic, essentially the number of permissable failures.
+
+----------------------------
+
+Cards have
+    perception and stubborness
+        when asked to use these
+        choose a card from your hand
+        if it is not already revealed, reveal it 
+            (show to opponent, and keep visible afterwards)
+        use that card's stat as your stat
+        You may choose not to reveal any card, in which case your defense is 0.
+
+    a list of effects, each with
+        tags describing where it can be used
+            kinds: [action] [modifier] [discard]
+            priority: [slow] [regular] [fast]
+            targets: range, aoe, number, etc
+            other: combo
+        
+        these tags are usually given in shorthand
+        	for example, [melee attack] means
+        		kind: action
+        		priority: regular
+        		target: single adjacent enemy	
+
+        a textual description of the effect or effects
+        usually common effects are given in shorthand
+        	for example, [walk 5] means
+        		kind: action
+        		priority: slow
+        		target: self
+        		effect: give +5 move
+
+
+Combat flow
+Round
+    All players draw cards equal to their [draw]. 
+    	This is usually the number of tracks they have.
+        Draw until deck is empty, then reshuffle discard pile for a new deck.
+
+    Teams alternate.
+        Choose a team member to either play an action or discard a card.
+            This is mandatory if any team member has more cards in hand than their [hold].
+            If both teams pass here, proceed to the next round.
+        
+        The game enters "sequence" mode.
+            Each character may play only one card per sequence 
+            	exception: "discard" effects, which specify their own criteria
+            	exception: cards with "combo"
+            Create an action stack for this sequence.
+            The stack has levels. Each level has
+                - one action
+                - zero to many modifiers
+
+        To play an action
+        	Choose valid targets for the action.
+        		If you cannot do so, you cannot play the action.
+        		These targets are locked in, and may not change.
+        	Add the action to the top of the stack
+        
+        When an action becomes the top of the stack
+            Any participant may choose to play a new action.
+                The new action must have higher priority.
+                If multiple participants want to add an action
+                    the participant with highest perception wins
+                    if tied, the active team wins
+                That new action becomes top of the stack
+
+            All participants may choose to apply a modifier to the current action.
+                The modifier must be of equal or higher priority.
+                Once applied, a modifier cannot be taken back.
+                When no one wants to add a modifier, proceed.
+
+            The current action resolves, with all applied modifiers.
+            The stack drops down. The next action becomes the top of the stack.
+            
+            If the stack is empty, it clears. Swap active teams and repeat.
+
+
+In combat / out of combat interactions
+    Each turn lasts six seconds, and each characters draws <3> cards.
+    Each character can hold one card between rounds.
+    Outside of combat the same rules apply.
+
+    If characters have 30 seconds to prep, they can cycle through all their cards.
+    This means characters can be holding 1 card of their choice at the start of combat.
+    In case of ambushes, the surprised side doesn't have this extra card.
+
+    Instant obstacles, for example when a pit trab suddenly opens
+        Player [draws] and then calculates their defense normally
+    Passive obstacles, for example a door that can be broken down
+        You may spend 30 seconds, then use whatever hand you want
+
+    
+
+
+
+Dice overview -- Attacker wins ties
+
+mod  chance 
+ -3    17%    6/36
+ -2    28%   10/36
+ -1    42%   15/36
+ 00    58%   21/36
+ +1    72%   26/36
+ +2    83%   30/36
+ +3    92%   33/36
+ 
+
+perception / stubborness
+    00  60%  Typical.
+    +1  25%  A subtle or flavorful buff. 
+    +2  10%  Interesting, a key consideration of this card.
+    +3   5%  This card is exclusively about this bonus.
+
+
+Attack effects
+	interrupt : target cannot affect the current sequence. (cancel cards, no new cards)
+	stagger x : interrupt, then defender discards x cards (attacker chooses which ones)
+	prone     : interrupt, defender discards all cards. Next turn they only draw half.
+	lethal x  : deal some amount of damage, by default 1
+
+
+keywords
+	interfere : modifier, targets enemy, when enemy is attacking ally
+	distract  : modifier, targets enemy, when ally is attacking enemy
+
+	walk X	  : move X at slow speed
+	run X     : move X at regular speed
+	combo     : may be played even if you have already played in this sequence
+	jump      : this movement ignores terrain effects	
+
+
+spending move
+	when a character is granted  move points
+	immediately, that character may spend some or all of it
+		1 move to travel 1 square
+		different amounts for obstacles and terrain interactions
+	unspent move points are lost
+
+====================================
+==== Rules Examples
+
+
+A Cleric attempts to move away from two goblins.
+The Goblins are both holding a copy of "slash".
+
+Start of sequence, stack is clear
+
+	Cleric casts "walk 2" which is really "slow action : grant yourself 2 move"
+		action has a valid target
+		"walk 2" becomes top of the stack
+		any character may choose to activate a [regular] or [fast] action
+		Krug chooses to do so
+
+	Krug activates "slash"
+		action has a valid target (the cleric has not yet moved)
+		"slash" becomes top of stack, any character may use a [fast] action 
+			- all pass
+		any character may apply a modifer
+		the Cleric's buddy applies a "covering fire", granting +2 interfere
+		    - all pass
+		the action resolves
+		cleric rolls (d6 + 2) and goblin rolls (d6 + 0)
+		the cleric randomly wins, and so is unharmed
+		the stack drops down
+
+	"walk 2" becomes the top of the stack
+		any character may choose to activate a [regular] or [fast] action
+		Grug chooses to do so
+		:: note :: if Krug had another slash in hand, he couldn't play it
+		:: note :: all characters are limited to one card per stack 
+
+	Grug activates "slash"
+		action has a valid target (the cleric has not yet moved)
+		"slash" becomes top of stack
+		any character may choose to activate a [fast] action 
+			- all pass
+		any character may choose to apply a modifer
+		    - all pass
+		the action resolves
+		cleric rolls (d6 + 0) and goblin rolls (d6 + 1)
+		the goblin wins, and so the attack deals one damage
+		the cleric uses their armor to prevent the damage
+			"discard - reducing incoming damage by 1"
+		the stack drops down
+
+	"walk 2" becomes the top of the stack
+		any character may choose to activate a [regular] or [fast] action
+			- all pass
+		any character may choose to apply a modifier
+			:: note :: slows and move buffs could be applied here
+			- all pass
+		the action resolves
+		the cleric gains 2 move
+		the cleric spents the 2 move to travel 2 squares
+		the stack drops down
+
+	stack is empty, the sequence ends
+	active team flips from the cleric to the goblins.
+
+In high level terms
+	The cleric starts to move.
+	Fist goblin opportunity attacks.
+		Ranger uses "covering fire"
+		Goblin misses.
+	Second goblin opportunity attacks
+		Goblin hits.
+		Cleric discards an armor to protect.
+	The Cleric continues their move.
+
+
+
+Example two
+
+Two thugs, one with power attack and one with stunning blow.
+A civilian with "dash" who needs to get away.
+
+civilian is active
+	They use dash.
+	The thugs don't have any fast actions, and can't respond.
+	Civilian moves to safety.
+
+thugs are active
+	Thug A uses power attack.
+	Characters with normal actions may respond
+		civilian, do you wish to respond? No.
+		thug B, do you wish to respond? No.
+	Splat
+
+	Thug A uses power attack.
+	Characters with normal actions may respond
+		civilian, do you wish to respond? No.
+		thug B, do you wish to respond? Yes, with stunning blow at the civilian.
+		civilian, do you wish to respond? No.
+	Splat
+
+	Thug A uses power attack.
+	Characters with normal actions may respond.
+		civilian, do you wish to respond? Yes, with dash targetting myself.
+		thug team, do you wish to respond? Yes, thug B plays stunning blow at the civilian.
+		civilian team cannot respond, all members have played
+		thug team cannot respond, all memebers have played
+
+	## compare priority. If tied, thugs win because they are the active team.
+
+	If thugs win priority,
+		resolve the stunning blow. If it hits,
+			interrupt the civilian, cancelling the dash.
+			Splat.
+	If civlian wins priority,
+		resolve the dash. The civilian moves far away.
+		stunning blows resolves, but has no effect since target is out of reach.
+
+
+Realistic Scenarios
+
+	Civlian has initiative.
+		- escape immediately, no reaction possible.
+
+	Thugs have initiative, civilian has perception
+		Thug B attempts stunning blow.
+		If it hits, and if dash is discarded, Thug A kills.
+		- depends on the stunning blow roll, and dash discard.
+
+	Thugs have initiative, thugs have perception
+		Thug A launches power attack.
+		Thug B follows up with stunning blow.
+		If stunning blow hits, it locks out all actions from the interrupt.
+		- depends on the stunning blow roll.
+
+
+
+A : thugs has initiative?	   50%
+B : thugs has perception?	   80%  given that they have initiative
+C : does stunning blow hit?    70%  at +1
+D : does dash get discarded?   50%  one out of two cards
+
+
+Stunning blow +1 stagger 1
+
+A and C and (B or D)
+
+50% and 83% and (80% or 50%)
+
+
+Assuming you both have a 30% chance of a perception card.
+There's a 80% chance you have perception given initiative
+
+
+58/72/83  and (80 or 0/50/100)
+
+	     	+0    +1    +2
+interrupt   46    52	58
+stagger 1 	58    65    72
+stagger 2	66    75    83
+
+
+
+
+58/72/83  and (80 or 0/50/100)
+
+	     	+0    +1    +2
+interrupt       52	58
+stagger 1 	58    65    72
+stagger 2	66    75    83
+
+Assuming they have better perception cards, so they win 50%
+
+
+
+
+
+
+
+
+
+
+
+
+
+

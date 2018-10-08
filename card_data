@@ -57,6 +57,8 @@ Efficient Defense
 	run 3
 
 Dramatic Swing
+-- flavor: the stagger is because worst case, 
+--     you have to lean backwards to avoid it
 	melee attack
 		+0 vs defense, staggers 1
 	distract 4
@@ -90,7 +92,7 @@ Headbutt
 	walk 2
 
 Quick Slap
-	fast melee combo attack
+	fast melee attack
 		+2 vs defense, interrupts
 	run 3
 
@@ -117,7 +119,7 @@ Arcing Shot
 Covering Fire
 	range8 attack
 		+1 vs defense, staggers
-	interfere 1
+	interfere 2
 	walk 3
 
 Lunging Stab
@@ -165,9 +167,10 @@ Efficient Armor
 		prevent 1 incoming damage
 		draw a card
 
-Basic Armor
+Sturdy Armor
 	discard
 		prevent 1 incoming damage	
+	1 stubborness
 
 Flash Freeze
 	cone2 attack
@@ -182,7 +185,7 @@ Encumbering Frost
 
 Stunning Blow
 	melee attack
-		+0 vs defense, staggers 2
+		+2 vs defense, staggers 1
 
 Gust
 	range5 action
@@ -198,6 +201,7 @@ Wind Wall
 Brutal Headbutt
 	melee attack
 		stuborness contest, loser prone
+	2 stubborness
 
 Fissure
 	line5 aoe attack

@@ -1,17 +1,17 @@
 Character Tracks
 
 
-Classes - may pick 0 or 1
+
+utility (6)
     Core Fighter Track      Good tankyness and flexibility.
     Core Rogue Track        Highly mobile, abuses priority.
     Core Cleric Track       Powerful support effects, but squishy.
 
-Magic - may pick 0 or 1
     Icy Warhammer           Debuff enemies with slows and staggers.  
     Disciple of Air         Reposition enemies and allies.
     Disciple of Earth       Tanky, terrain manipulation, poor mobility.
 
-Items - may pick any number
+offense (6)
     Imperial Shortsword     Solid all round, good mobility.
     Goblin Scimitar         Better at distracting enemies than hitting them.
     Bandit's Club           A heavy weapon for battering tanky enemies.
@@ -19,11 +19,15 @@ Items - may pick any number
     Hunting Bow             Influence the battle from a distance.
     Elven Spear             Good for stabbing pesky Rogues.
 
+defense (3)
     Skirmisher's Shield     Lets you weave through battle.
     Tower Shield            Slow, but provides cover to allies.
     Recruit's Chainmail     Heavy and clunky, but it keeps you alive.
 
-    
+
+15 tracks = 75 cards
+
+
 ----------
 Core Fighter Track
     1x Grim Resolve
@@ -61,7 +65,7 @@ Core Rogue Track
         move 4
 
 Core Cleric Track
-    1x Radiance
+    1x Light of Wisdom
         passive: while this is in your hand, all allies gain +1 [circle], stacking
     1x Light of Vigor
         passive: while this is in your hand, all allies gain +1 [square], stacking
@@ -127,7 +131,7 @@ Hunting Bow
         +1 [circle]
         +0 vs defense, kills, close range
         move 4
-    2x Careful Shot
+    2x Arcing Shot
         slow, +2 vs defense, kills, medium range
         slow move 4
     2x Covering Fire
@@ -167,9 +171,11 @@ Tower Shield
         slow move 1
 
 Recruit's Chainmail
-    3x Solid Armor
+    1x Efficient Armor
         discard - prevent 1 incoming damage. Draw a card.
-    2x Clunk
+    3x Armor
+        discard - prevent 1 incoming damage.
+    1x Clunk
         slow move 1
 
 Icy Warhammer
