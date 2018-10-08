@@ -1,0 +1,37 @@
+
+
+Legionnaire
+	Imperial Shortsword
+	Tower Shield
+	Recruit's Chainmail
+
+
+
+
+Scene -> Encounter -> Round -> Sequence -> Action
+
+
+mod  chance  
+ -3    17%    6/36
+ -2    28%   10/36
+ -1    42%   15/36
+ 00    58%   21/36
+ +1    72%   26/36
+ +2    83%   30/36
+ +3    92%   33/36
+
+
+Attack effects
+	interrupt : cancel target's cards in the current sequence
+	stagger x : interrupt, then defender discards x cards (attacker chooses which ones)
+	prone     : interrupt, defender discards all cards. Next turn they only draw half.
+	kill      : deal some amount of damage, by default 1
+
+keywords
+	interfere : modifier, targets enemy, when enemy is attacking ally
+	distract  : modifier, targets enemy, when ally is attacking enemy
+
+	combo     : may be played even if you have already played in this sequence
+	jump      : this movement ignores terrain effects	
+
+

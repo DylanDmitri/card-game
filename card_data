@@ -1,0 +1,225 @@
+Grim Resolve
+	discard
+		draw 2 cards
+	2 perception, 2 stubborness
+
+Toughness
+	discard
+		reduce incoming damage by 1
+	discard
+		negate staggered effect
+	3 stubborness
+
+Keen Senses
+	run 4
+	perception4
+
+Leap
+	fast combo action
+		move 2, jump
+
+Dirty Trick
+	action 
+		perception contest each enemy
+		if you win all, stealth
+	perception2
+
+Light of Wisdom
+	aura: while in your hand
+		you and allies have +1 perception
+
+Light of Vigor
+	aura: while this is in your hand
+		you and allies have +1 stuborness
+
+Intercession
+	discard
+		reroll any one dice
+		draw a card
+	run 5
+
+Lay on Hands
+	melee heal
+		revive a fallen ally
+		ally is prone
+	walk 4
+
+Simple Strike
+	melee attack
+		+1 vs defense, lethal
+	distract 2
+	run 3
+
+Efficient Defense
+	melee block
+		+2 defense
+		on block, draw a card
+	run 3
+
+Dramatic Swing
+	melee attack
+		+0 vs defense, staggers 1
+	distract 4
+	walk 3
+
+Slash
+	melee attack
+		+0 vs defense, lethal
+	run 4
+
+Clumsy Block
+	melee block
+		+2 defense
+	walk 2
+
+Power Attack
+	slow melee attack
+		+5 vs defense, lethal 2
+	discard
+		gain +1 stubborness
+
+Clobber
+	melee attack
+		+0 vs defense, lethal
+	walk 3
+
+Headbutt
+	melee attack
+		Stubborness contest.
+		Lose by X -> staggered by X
+	walk 2
+
+Quick Slap
+	fast melee combo attack
+		+2 vs defense, interrupts
+	run 3
+
+Coup de Grace
+	slow melee attack
+		perception contest, lethal 3
+	walk 2
+
+Dash
+	run 8
+	toughness1
+
+Snipe
+	range5 attack
+		+0 vs defense, lethal
+	run 4
+	perception1
+
+Arcing Shot
+	slow range8 attack
+		+2 vs defense, lethal
+	walk 4
+
+Covering Fire
+	range8 attack
+		+1 vs defense, staggers
+	interfere 1
+	walk 3
+
+Lunging Stab
+	reach attack
+		gain (move 1)
+		+0 vs defense, kills
+	run 4
+
+Stab
+	reach attack
+		+0 vs defense, kills
+	walk 3
+
+Nimble Block
+	melee block
+		+2 defense
+		on block, move 1
+
+Shield Block
+	block, +4 defense
+	move 4
+
+Shield Bash
+	block
+		+2 defense	
+		on blocking a melee attack, 
+			stagger attacker
+
+Reliable Defense
+	block: self or ally
+		+2 defense, keep
+	block: self or ally
+		+6 defense
+
+Covering Block
+	block: self or ally
+		+4 defense
+	walk 2
+
+Clunk
+	walk 1
+
+Efficient Armor
+	discard
+		prevent 1 incoming damage
+		draw a card
+
+Basic Armor
+	discard
+		prevent 1 incoming damage	
+
+Flash Freeze
+	cone2 attack
+		+0 vs perception, staggers 2
+	run 3
+
+Encumbering Frost
+	range3 modifier
+		-3 move, stubborness resist
+	range3 modifier
+		negate an enemy modifier
+
+Stunning Blow
+	melee attack
+		+0 vs defense, staggers 2
+
+Gust
+	range5 action
+		slide line3, stubborness resist
+	run 5, jump
+
+Wind Wall
+	ranged block
+		+3 defense
+	interfere 1
+	run 4, jump
+
+Brutal Headbutt
+	melee attack
+		stuborness contest, loser prone
+
+Fissure
+	line5 aoe attack
+		+0 vs perception, staggers
+		leaves difficult terrain
+		+3 to climb, blocks line of sight
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
