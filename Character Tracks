@@ -1,5 +1,229 @@
 Character Tracks
 
+
+Classes - may pick 0 or 1
+    Core Fighter Track      Good tankyness and flexibility.
+    Core Rogue Track        Highly mobile, abuses priority.
+    Core Cleric Track       Powerful support effects, but squishy.
+
+Magic - may pick 0 or 1
+    Icy Warhammer           Debuff enemies with slows and staggers.  
+    Disciple of Air         Reposition enemies and allies.
+    Disciple of Earth       Tanky, terrain manipulation, poor mobility.
+
+Items - may pick any number
+    Imperial Shortsword     Solid all round, good mobility.
+    Goblin Scimitar         Better at distracting enemies than hitting them.
+    Bandit's Club           A heavy weapon for battering tanky enemies.
+    Thief's Dagger          Tricky to use, relies on priority.
+    Hunting Bow             Influence the battle from a distance.
+    Elven Spear             Good for stabbing pesky Rogues.
+
+    Skirmisher's Shield     Lets you weave through battle.
+    Tower Shield            Slow, but provides cover to allies.
+    Recruit's Chainmail     Heavy and clunky, but it keeps you alive.
+
+    
+----------
+Core Fighter Track
+    1x Grim Resolve
+        +2 [square]
+        +2 [circle]
+        special action - draw 2 cards
+    3x Toughness
+        +3 [square]
+        discard - reduce incoming damage by one
+        discard - ignore the effects of a "staggered" against you
+    1x Weapon Skill
+        +1 [circle]
+        discard - interfere 1
+        discard - distract 1
+        move 3
+
+Core Rogue Track
+    1x Keen Senses
+        +4 [circle]
+        move 4
+    2x Leap
+        fast action - move 2
+            combo (you may play this action even if you have another card on the stack)
+            jump (ignore terrain effects)
+    2x Dirty Trick
+        +2 [circle]
+        action - special
+            for each enemy
+                add a ranged "notice" attack against you on top of the stack
+                ```perception -vs- perception, interrupt```
+            you gain the "stealth" status
+                the next card you play breaks stealth. When this happens
+                    for the duration of the current sequence stack
+                    whenever you play a card you may choose to increase its priority by one stage.
+        move 4
+
+Core Cleric Track
+    1x Radiance
+        passive: while this is in your hand, all allies gain +1 [circle], stacking
+    1x Light of Vigor
+        passive: while this is in your hand, all allies gain +1 [square], stacking
+    2x Intercession
+        discard - reroll any one dice. Draw a card.
+        move 5
+    1x Lay on Hands
+        action - return a fallen ally to life
+            the ally has no cards this turn
+            the ally is prone (draws half cards next turn)
+        slow move 4
+
+
+----------
+OTHER TRACKS
+
+Imperial Shortsword 
+    3x Simple Strike
+        +1 vs defense, kills
+        distract 2 (modifier, when ally is attacking enemy)
+        move 3
+    2x Efficient Defense
+        +2 melee defense. On block, draw a card.
+        move 3
+
+Goblin Scimitar
+    2x Dramatic Swing
+        +0 vs defense, staggers 1
+        distract 4 (modifier, when ally is attacking enemy)
+        slow move 3
+    1x Slash
+        +0 vs defense, kills
+        move 4
+    2x Clumsy Block
+        +2 melee defense
+        slow move 2
+
+Bandit's Club
+    1x Power Attack
+        slow, +5 vs defense, kills, 2 damage
+        discard - grants you +1 [square] this action only
+    2x Clobber
+        +0 vs defense, kills
+        slow move 3
+    2x Headbutt
+        [square] vs [square], lose by X -> staggered by X
+        slow move 2
+
+Thief's Dagger
+    2x Quick Slap
+        fast, +2 vs defense, interrupts 
+        combo (you may play this action even if you have another card on the stack)
+        move 3
+    2x Coup de Grace
+        slow, [circle] vs [circle], kills, damage may not be reduced
+        slow move 2
+    1x Dash
+        +1 [square]
+        move 8
+
+Hunting Bow
+    1x Snipe
+        +1 [circle]
+        +0 vs defense, kills, close range
+        move 4
+    2x Careful Shot
+        slow, +2 vs defense, kills, medium range
+        slow move 4
+    2x Covering Fire
+        +2 vs [circle], staggers 1
+        interfere 1 (when an enemy is attacking an ally)
+        slow move 3
+
+Elven Spear
+    1x Lunging Stab
+        take a one square step, then
+            reach, +0 vs defense, kills
+        move 4
+    2x Stab
+        reach, +0 vs defense, kills
+        slow move 3
+    2x Nimble Block
+        +2 melee defense. If you block, move 1 square.
+        move 1
+
+
+Skirmisher's Shield
+    3x Shield Block
+        modifier: +4 defense
+        move 4
+    2x Shield Bash
+        +2 defense. If this blocks a melee attack, [stagger 1] the attacking enemy.
+        slow move 2
+
+Tower Shield
+    1x Reliable Defense
+        modifier: self or ally, +2 defense, keep
+        modifier: self or ally, +6 defense
+    3x Covering Block
+        modifier: self or ally, +4 defense
+        slow move 2
+    1x Clunk
+        slow move 1
+
+Recruit's Chainmail
+    3x Solid Armor
+        discard - prevent 1 incoming damage. Draw a card.
+    2x Clunk
+        slow move 1
+
+Icy Warhammer
+    2x Flash Freeze
+        cone 2, +0 vs [circle], staggers 2
+        move 3
+    1x Encumbering Frost
+        modifier: range 3, slow 3. Target may ignore one slow per [square]
+        modifier: range 3, negate an enemy modifier.
+        slow move 2
+    2x Stunning Blow
+        +0 vs defense, staggers 2
+        slow move 3
+
+Disciple of Air
+    3x Gust
+        range 5, slide target 3 squares in any one direction
+            target may ignore one slide per [square]
+        move 5
+            jump (ignore most terrain effects)
+    2x Wind Wall
+        +1 [circle]
+        modifier: +3 defense against a ranged attack
+        interfere 1 (modifier, when enemy is attacking an ally)
+        move 4
+            jump (ignore most terrain effects)
+
+Disciple of Earth
+    1x Toughness
+        +3 [square]
+        discard - reduce incoming damage by one
+        discard - ignore the effects of a "staggered" against you
+    2x Brutal Headbutt
+        [square] vs [square], loser is knocked prone
+    2x Fissure
+        action - 
+            target: a line of 5 squares extending from you in any direction
+            all characters in aoe take
+                +0 vs [circle], stagger 1
+            affected squares become raised terrain
+                requires 3 [move] to climb
+                blocks line of sight
+
+
+
+
+
+
+
+
+
+
+============
+
 Fighter Attack Cards 
 
 [action : melee attack]
@@ -63,103 +287,10 @@ Common Weapons
     Axe   - cleave
 
 
-Imperial Shortsword 
-    3x Simple Strike
-        +1 vs defense, kills
-        distract 2
-        slow move 3
-
-    2x Efficient Defense
-        +2 defense. On block, draw a card.
-        move 3
-
-
-Bandit's Club
-    1x Power Attack
-
-
-    2x Clobber
-        +0 vs defense, kills
-        slow move 4
-
-    2x Headbutt
-
-        +2 vs defense, stagger 2
-        distract 2
-        slow move 2
-
-
-Goblin Scimitar
-    2x Dramatic Swing
-        +0 vs defense, staggers 1
-        distract 4
-        slow move 3
-
-    1x Slash
-        +0 vs defense, kills
-        move 4
-
-    2x Clumsy Block
-        +2 melee defense
-        slow move 2
 
 
 
 
-----------
-Core Fighter Track
-
-    1x Grim Resolve
-        +2 [square]
-        +2 [circle]
-        special action - draw 2 cards
-
-    2x Toughness
-        +3 [square]
-        reaction: when you take damage - reduce damage by 1
-
-    2x Weapon Skill
-        +1 [circle]
-        reaction: after rolling for attack or defense - gain +1
-        action - move 3
-
-
-----------
-Core Rogue Track
-    
-    1x Keen Senses
-        +5 [square]
-        action - move 4
-
-    2x Leap
-        fast action - jump 2
-            combo (you may play this action even if you have another card on the stack)
-            jump (ignore terrain effects)
-
-    2x Preperation
-    "You perform some action stealthily: drawing a hidden knife, posioning a blade, etc."
-    "The unexpectedness makes your next action extra deadly."
-        +2 [circle]
-        action - special
-            add a special event on top of the stack
-                all enemies make a ranged attack against you
-                ```perception -vs- perception, interrupt```
-            you gain the "stealth" status
-                the next card you play breaks stealth. When this happens
-                    for the duration of the current sequence stack
-                    whenever you play a card you may choose to increase its priority by one stage.
-                note: you may also discard rather than playing
-
-
-
-
-
-
-
-
-
-----------
-pick two of the following
 
 
 Sword

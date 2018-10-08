@@ -55,7 +55,7 @@ Round
         Draw until deck is empty, then reshuffle discard pile for a new deck.
 
     Teams alternate.
-        Choose a team member to take an action.
+        Choose a team member either play an action or discard a card.
             This is mandatory if any team member has more cards in hand than their [hold].
             If both teams pass here, proceed to the next round.
         
@@ -105,13 +105,14 @@ In combat / out of combat interactions
 Dice overview -- Defender wins ties
 
 mod d20  chance real
- -3  17  17%    6/36
- -2  14  28%   10/36
- -1  12  42%   15/36
- 00   8  58%   21/36
- +1   6  72%   26/36
- +2   3  83%   30/36
-
+ -3    17%    6/36
+ -2    28%   10/36
+ -1    42%   15/36
+ 00    58%   21/36
+ +1    72%   26/36
+ +2    83%   30/36
+ +3    92%   33/36
+ 
 
 perception / stubborness
     00  60%  Typical.
