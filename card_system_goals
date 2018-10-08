@@ -1,0 +1,148 @@
+
+problem statement
+goals
+
+character building is rich
+character piloting is poor
+
+player loop
+    wait for turn -> auto attack -> wait for turn
+
+encounter loop
+    burn resources per encounter
+    good strategy gets you through with less waste
+
+
+force creativity by providing options
+    "an opportunity comes up to do x"
+    force creativity through option availibility
+        block options conditionally
+        have a deck and draw cards
+        have an "this option comes up" action
+
+
+-----------------------------
+
+DESIGN GOALS
+
+Force Improvisation
+    Variety. 
+    Break the default gameplan. These enemies are armored. What do you do?
+    Randomness builds stories (Hearthstone)
+
+Provide Building Blocks
+    Give tools not fish.
+    Don't give immunity to opportunity attacks....
+    give additional movement and acrobatics so you can jump off the wall.
+    
+When in doubt, Simplify
+    rule of outliers: one good thing is better than two mediocre ones
+    tighten the gameplay loop
+
+-------------
+
+Physical, Mental, Luck
+
+Physical and Mental are primary power limiters.
+Luck is a scene-based expendable resource, number of permissable failures.
+
+--------------
+
+
+Wind Spells
+    Feather Fall
+    Gust 
+    Deflect Projectiles
+
+
+Levitation
+Teleportation
+Sanctuary
+Negation
+Fire Proof
+
+
+10+  17%    6/36
+ 9+  28%   10/36
+ 8+  42%   15/36
+ 7+  58%   21/36
+ 6+  72%   26/36
+ 5+  83%   30/36
+
+
+
+
+
+Goblin
+7 hp
++1 physical, -2 mental
+
++6 stealth, free hide/escape
++4 sword, 5 damage
++4 bow, 5 damage
+
+
+
+Goblin Ambush
+    4 goblins, stealthed
+    awareness check for surprise round
+
+      [forest bluff]   [forest bluff]
+   [road]      [broken cart]     [road]
+          [field]         [field]
+
+
+Goblin Actions per Round
+    move
+    hide (+2)
+
+    buddy attack (scimitar)
+    predictable fire (bow)
+
+you may play any card as 
+    move -  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+$5,902.02
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

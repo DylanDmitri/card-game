@@ -1,0 +1,67 @@
+Character Tracks
+
+Fighter Attack Cards 
+
+[action : melee attack]
+    attack -vs- defense, effect
+[modifier : melee distraction]
+    -x to defense 
+[action : move 2]
+
+
+Things you can change 
+
+    1 attack priority (fast, medium, slow)
+        typical is medium
+    2 attack targets 
+        typical is single target
+        chess squares (single enemy, multiple enemies, reach, reach only)
+    3 attack bonus (to hit)
+        typical is +1
+    4 attack effect (interrupt, stagger x, stun, prone, kill, piercing)
+    5 distraction amount
+    6 move amount 
+    7 move speed
+    8 muscle
+    9 perception
+
+    special:
+        stat used for attack 
+        stat used for defense 
+        pursuing [for opportunity attacks]
+
+    1 attack 
+    2 effect 
+    3 distract 
+    4 move priority
+    5 move distance
+
+Simple Strike
+    +1 vs defense, kills
+    distract 2
+    slow move 3
+
+More Mobility
+    +0 vs defense, kills 
+    move 3 
+
+More offense
+    +2 vs defense, kills 
+    slow move 2
+
+No Nonsense
+    +3 vs defense, kills
+
+
+
+Club
+
+Dagger 
+
+
+
+
+
+
+
+

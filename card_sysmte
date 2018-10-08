@@ -1,0 +1,105 @@
+
+
+
+
+Rougue
+
+scimitar: 2x Buddy Attack, 1x Slash, 2x Block
+shortbow: 1x Snipe, 2x Pot Shot, 2x Covering Fighter
+golbin stealth: 2x Scamper, 3x Hide
+
+
+Fighter
+
+spiked club: 1x power attack, 2x smash, 2x stunning blow
+chainmail: 3x armor, 2x clunk
+bruiser: 1x moment of resolve, 2x fight through, 2x weapon mastery
+
+
+
+
+
+
+Buddy Attack: 
+    (melee attack, priority 1)
+    +0 attack, kills. 
+    +3 attack when used as an assist
+
+Slash:
+    (melee attack, priority 1)
+    +1 attack, kills.
+
+Clumsy Parry: 
+    (melee defense, priority 1)
+    Gain +1 defense
+    
+Snipe:
+    (range 2 attack, priority 1)
+    +1 attack, kills
+
+Pot Shot
+    (range 2 attack, priority 0)
+    +1 attack, kills
+
+Covering Fire
+    (range 2 attack, priority 1)
+    Give target enemy -1 to anything.
+
+Scamper
+    (null)
+    When you spend this card to move, draw a card.
+
+Hide
+    (action, priority 1)
+    +2 stealth, roll vs enemies highest perception
+    stealth breaks if enemy enters same area
+    when stealthed, next action has +1 priority
+
+
+
+Bugbear Brute
+
+spiked club: 1x power attack, 2x smash, 2x stunning blow
+chainmail: 3x armor, 2x clunk
+bruiser: 1x moment of resolve, 2x fight through, 2x weapon mastery
+
+Power Attack
+    (melee attack, priority 0)
+    +0 attack, kills, 2 damage
+
+Smash
+    (melee attack, priority 1)
+    +0 attack, kills
+
+Stunning Blow
+    (melee attack, priority 1)
+    +3 attack, stuns
+
+Chainmail
+    (armor)
+    While you hold this card, you have +4 defense against physical attacks. Does not stack with other armor.
+    You may not use this card to move.
+
+Clunk
+    If you have this card, you must play it.
+    Discard this card, and all armor cards you are holding.
+
+Moment of Resolve
+    (event, priority 0)
+    Draw two cards.
+
+Fight Through
+    (reaction)
+    Discard to prevent one of
+        - 1 damage
+        - being stunned
+        - being knocked prone 
+
+Weapon Mastery
+    (melee attack/defense, priority 1)
+    Choose one
+        - give yourself +2 melee attack
+        - give youtself +2 melee defense
+
+
+

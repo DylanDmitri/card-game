@@ -1,0 +1,414 @@
+
+DESIGN GOALS
+
+Force Improvisation
+    Variety. 
+    Break the default gameplan. These enemies are armored. What do you do?
+    Randomness builds stories (Hearthstone)
+
+Provide Building Blocks
+    Give tools not fish.
+    Don't give immunity to opportunity attacks....
+    give additional movement and acrobatics so you can jump off the wall.
+    
+When in doubt, Simplify
+    rule of outliers: one good thing is better than two mediocre ones
+    tighten the gameplay loop
+
+----------------------------
+
+Characters are
+    - a deck of cards, built from some number of tracks
+    - a luck counter
+
+Luck resets per scene.
+It is essentially the number of permissable failures.
+
+----------------------------
+
+Cards have
+    speed, perception, and stubborness
+        Discard any card to move [speed] squares as an [action].
+
+        When asked to use these as defenses
+        Choose a card from your hand
+        If it is not already revealed, reveal it 
+            (show to opponent, and keep visible afterwards)
+        Use that card's stat as your defense
+        You may choose not to reveal any card, in which case your defense is 0
+
+    a list of effects, each with
+        tags describing where it can be used
+            priority: [slow] [default] [fast] [ultra fast]
+            kinds: [action] [modifier] [reaction]
+
+        general tags: [attack] [distraction] ...
+
+        a textual description of the effect
+
+        you may play the card to activate one of the chosen effects
+
+
+Combat flow
+Round
+    All players draw cards equal to their [draw]. This is usually the number of tracks they have.
+        Draw until deck is empty, then reshuffle discard pile for a new deck.
+
+    Teams alternate.
+        Choose a team member to take an action.
+            This is mandatory if any team member has more cards in hand than their [hold].
+            If both teams pass here, proceed to the next round.
+        
+        The game enters "stack" mode. 
+            Each character may play only one card per stack.
+            The stack has levels. Each level has
+                - one action
+                - zero to many modifiers
+        
+        When an action becomes the top of the stack
+            Any participant may choose to add a new action to the stack.
+                The new action must have higher priority.
+                If multiple participants want to add an action
+                    the participant with highest perception wins
+                    if tied, the active team wins
+                That new action becomes top of the stack
+
+            All participants may choose to apply a modifier to the current action.
+                The modifier must be of equal or higher priority.
+                Once applied, a modifier cannot be taken back.
+                When no one wants to add a modifier, proceed.
+
+            The current action resolves, with all applied modifiers.
+            The stack drops down. The next highest-priority action becomes the top.
+            
+            If the stack is empty, it clears. Swap active teams and repeat.
+
+In combat / out of combat interactions
+    Each turn lasts six seconds, and each characters draws <3> cards.
+    Each character can hold one card between rounds.
+    Outside of combat the same rules apply.
+
+    If characters have 30 seconds to prep, they can cycle through all their cards.
+    This means characters can be holding 1 card of their choice at the start of combat.
+    In case of ambushes, the surprised side doesn't have this extra card.
+
+    Instant obstacles, for example when a pit trab suddenly opens
+        Player [draws] and then calculates their defense normally
+    Passive obstacles, for example a door that can be broken down
+        You may spend 30 seconds, then use whatever hand you want
+
+    
+
+
+
+
+Dice overview -- Defender wins ties
+
+mod d20  chance real
+ -3  17  17%    6/36
+ -2  14  28%   10/36
+ -1  12  42%   15/36
+ 00   8  58%   21/36
+ +1   6  72%   26/36
+ +2   3  83%   30/36
+
+
+perception / stubborness
+    00  60%  Typical.
+    +1  25%  A subtle or flavorful buff. 
+    +2  10%  Interesting, a key consideration of this card.
+    +3   5%  This card is exclusively for this bonus.
+
+speed
+    The others grant the bonuses passively, but speed is in contrast to the card's effect.
+    Either you get the speed or the effect.
+    This means effect strength and speed should be positively correlated.
+
+    step, shuffle, walk, job, run
+
+    0  ---  armor cards
+    3  20%  
+    4  30%  
+    5  30%  
+    6  20%  
+
+
+
+If your attack deals
+    interrupt :: enemy cannot have cards trigger in the current stack
+    stagger X :: interrupt, then choose X cards from target's hand to discard
+    stun      :: interrupt, target discards hand
+    prone     :: stun, target draws half (round down) next round
+
+
+
+FIGHTER
+
+# 1x Power Attack     0   ?   2
+  2x Clobber          0   0   3
+  2x Headbutt         0   1   2
+# 3x Shield Block     0   0   4
+  2x Shield Bash      0   1   1
+# 1x Grim Resolve     2   2   
+  2x Toughness        0   3   
+  2x Weapon Skill     1   0   3
+
+2+6+4+12+2+6 = 
+12 + 12 + 8 = 32 overland speed
+
+Clobber
+    [action : melee attack]
+        +0 attack -vs- defense, kills
+    [modifier : melee distraction]
+        -2 to any
+    [action : move 3]
+
+Headbutt
+    [passive : +1 muscle]
+    [action : melee attack]
+        muscle -vs- muscle
+        whoever loses is staggered by the amount they lost
+    [action : move 2]
+
+Power Attack
+    [slow action : melee attack]
+       +5 attack -vs- defense, kills, 2 damage
+    [reaction : anytime]
+        Discard this card. Increase your muscle by +1 for this action only.
+    [action : move 3]
+
+Shield Block
+    [modifier : self or adjacent ally]
+        +4 defense
+    [action : move 4]
+
+Shield Bash
+    [passive: +1 muscle]
+    [modifier : self]
+        +2 defense. If you block and the attack is melee, [stagger 1] the attacking enemy.
+    [action : move 1]
+
+Grim Resolve
+    [passive : +2 perception]
+    [passive : +2 muscle]
+    [slow action]
+        Draw two cards.
+
+Toughness
+    [passive : +3 muscle]
+    [reaction : when you take damage]
+        You may discard this card. Reduce the damage taken by 1.
+
+Weapon Skill
+    [passive : +1 perception]
+    [reaction : after rolling for either defense or attack]
+        You may discard this card. Increase your roll by 1.
+    [action : move 3]
+
+
+ROGUE
+
+# 3x Gust           0  0  5f
+  2x Wind Wall      1  0  4
+# 1x Quick Slap     0  0  3
+  2x Backstab       0  0  3
+  2x Dash           0  1  8
+# 1x Keen Senses    5  0  4
+  2x Leap           0  0  2f
+  2x Hide           2  0  4
+
+
+Gust
+    [action : any character within close range]
+        Slide target 3 squares in any one direction.
+        An unwilling target may reduce the distance slid by their [muscle], to a minimum of 0.
+    [action : jump 5]
+
+Wind Wall
+    [passive : 1 perception]
+    [modifier : ranged defense]
+        +3 defense against a ranged attack.
+    [action : close range distraction]
+        -2 to any
+    [action : move 4]
+
+Quick Slap
+    [fast action : melee attack]
+        +2 -vs- defense, interrupts
+        combo (you may play this card even if you have another on the stack)
+    [action : move 3]
+
+Backstab
+    [slow action : melee attack]
+        +3 -vs- defense, kills, ignores armor
+    [action : move 3]
+
+Dash 
+    [action : move 8]
+
+Keen Senses 
+    [passive : 5 perception]
+    [active : move 4]
+
+Leap 
+    [fast action : jump 2]
+        combo (you may play this card even if you have another on the stack)
+
+Hide
+    [passive : +2 perception]
+    [slow action : all enemies that can see you]
+        perception -vs- perception, if you succeed all you become hidden
+        while hidden, enemies know roughly where you, but cannot target you directly
+        you may choose to break stealth to play a card. When you do so
+            for the duration of the current sequence stack
+                whenever you play a card you may choose to increase its priority by one stage
+    [action : move 4]
+
+
+CLERIC
+    1x wrath, 2x stunning blow, 2x clumsy block
+    1x illusion, 2x divine shield, 2x bless
+    3x armor, 2x clunk
+
+# 1x Wrath             
+  2x Tranquil Aura     
+  2x Clobber          
+# 1x Illusion         
+  1x Light of Wisdom   
+  3x Bless            
+# 3x Armor             
+  2x Clunk               
+
+Divine Wrath
+    [action : close range attack]
+        +0 -vs- perception, staggers 2
+    [action : move 3]
+
+Tranquil Aura 
+    [modifier : close range slow]
+        Slow enemy movement by 3 squares.
+        Enemy can reduce this slow by their perception, to a minimum of 0.
+    [modifier : melee defense]
+        Negate the effects of an enemy modifier.
+    [slow action : move 3]
+
+Clobber
+    [action : melee attack]
+        +0 attack -vs- defense, kills
+    [modifier : melee distraction]
+        -2 to any
+    [action : move 3]
+
+Armor 
+    [passive : +1 muscle]
+    [reaction : when you take damage]
+        Reduce the damage taken by one. Keep this card.
+    
+Clunk 
+    [this card has no use]
+
+Illusion 
+    [passive : +2 perception]
+    [slow action : close range attack]
+        perception -vs- perception 
+        shuffle DIFF illusion cards into target's deck (DIFF is the difference by which you exceed their defence)
+        Illusion cards have "[action] be confused", and are not reshuffled into discard on use 
+
+Bless 
+    [passive : +1 perception]
+    [modifier : close range ally]
+        Target draws a card.
+
+Light of Wisdom 
+    [passive : close range] 
+        You and allies in range have +1 perception, stacking.
+
+
+-----------------------
+Goblin Archer
+    shortbow: 1x Snipe, 2x Pot Shot, 2x Covering Fire
+    golbin stealth: 1x Scamper, 1x Keen Senses, 3x Hide
+
+38 overland speed
+
+
+Snipe
+    [passive : +1 perception]
+    [action : medium range attack] 
+        +0 vs defense, kills
+    [action : move 4]
+
+Careful Shot
+    [slow action : medium range attack]
+        +2 vs defense, kills
+    [slow modifier : medium range distraction]
+        -2 to any
+    [slow action : move 3]
+
+Covering Fire 
+    [action : medium range attack]
+        +2 vs perception, staggers 1
+    [modifier : medium range distraction]
+        -1 to any
+    [action : move 4]
+    
+Hide
+    [passive : +2 perception]
+    [slow action : all enemies that can see you]
+        perception -vs- perception, if you succeed all you become hidden
+        while hidden, enemies know roughly where you, but cannot target you directly
+        you may choose to break stealth to play a card. When you do so
+            for the duration of the current sequence stack
+                whenever you play a card you may choose to increase its priority by one stage
+    [action : move 4]
+    
+Scamper 
+    [reaction : if it is your turn to begin a new sequence]
+        Add both of the below actions to the stack.
+    [slow action : all enemies that can see you]
+        perception -vs- perception, if you succeed all you become hidden
+        while hidden, enemies know roughly where you, but cannot target you directly
+        you may choose to break stealth to play a card. When you do so
+            for the duration of the current sequence stack
+                whenever you play a card you may choose to increase its priority by one stage
+    [action : move 4]
+        
+Keen Senses 
+    [passive : 5 perception]
+    [active : move 4]
+
+---------
+Golbin Fighter 
+    scimitar: 2x exagerated swing, 1x slash, 2x clumsy block
+    golbin stealth: 1x Scamper, 1x Keen Senses, 3x Hide
+
+26 overland speed
+
+Exaggerated Swing
+    [action : melee attack]
+        +0 -vs- defense, staggers 1
+    [modifier : melee distraction]
+        -4 to defense
+    [slow action : move 4]
+    
+Slash 
+    [action : melee attack]
+        +0 -vs- defense, kills 
+    [modifier : melee distraction]
+        -2 to any 
+    [action : move 4]
+
+Clumsy Block 
+    [modifier : melee defense]
+        +2 defense 
+    [action : move 2]
+
+    
+
+
+
+
+
+
+
+

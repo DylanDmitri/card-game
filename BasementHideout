@@ -1,0 +1,203 @@
+Lost Mines of Phandelver
+
+Goblin Fighter (50xp)
+    scimitar: 2x Buddy Attack, 1x Slash, 2x Block
+    golbin stealth: 2x Scamper, 3x Hide
+
+Goblin Archer (50xp)
+    shortbow: 1x Snipe, 2x Pot Shot, 2x Covering Fire
+    golbin stealth: 2x Scamper, 3x Hide
+
+Wolf (50xp)
+    1x howl, 2x tackle, 2x bite
+    1x keen senses, 2x dash, 2x swiftness
+    
+Bugbear (200 xp)
+    spiked club: 1x power attack, 2x smash, 2x stunning blow
+    chainmail: 3x armor, 2x clunk
+    bruiser: 1x moment of resolve, 2x unbroken will, 2x weapon mastery
+
+Ochre Jelly (450 xp)
+    base move of 0'
+    bigger jellies are composed of more tracks
+
+    2x blob (move 1 square and attack), 3x squish (take no damage)
+
+
+
+Mechanics
+    Perception
+        search for doors
+        search for traps
+        search for stealth
+    
+    Dexterity Save
+
+
+Redbrand Ruffian
+Skeletons
+Nothic
+Evil Mage
+
+
+4x2 = 8 for gobbos
+3x3 = 9 for players
+
+
+Fighter
+3 physical, 0 mental, 3 luck
+    1x power attack, 2x clobber, 2x stunning blow
+    3x shield block, 2x shield bash
+    1x moment of resolve, 2x toughness, 2x weapon mastery 
+
+Rogue
+1 physical, 1 mental, 5 luck
+    3x gust, 2x deflect projectiles
+    1x sucker punch, 2x coup de grace, 2x leap
+    1x keen senses, 2x dash, 2x hide 
+
+Cleric
+2 physical, 1 mental, 3 luck
+    1x wrath, 2x stunning blow, 2x clumsy block
+    1x illusion, 2x divine shield, 2x bless
+    3x armor, 2x clunk
+
+
+
+Power Attack
+    [action - melee attack] [slow]
+    +5 attack, kills, 2 damage
+
+Clobber
+    [action - melee attack] [regular]
+    +0 attack, kills
+
+    [modifier - melee distraction] [regular]
+    -2 to target's roll
+
+Staggering Blow
+    [action - melee attack] [regular]
+    +2 attack, staggers (target may not play any further cards this round)
+
+    [modifier - melee distraction] [regular]
+    -2 to target's roll
+
+Shield Block
+    [modifier - defense] [regular] [self or adjacent ally]
+    +3 defense
+    Only works against attacks that can be reasonably blocked with a shield.
+
+Shield Bash
+    [modifier - ranged defense] [regular]
+    +2 defense
+    Against melee attacks, if you block, stagger the attacker (they must discard a card, if able)
+
+Moment of Resolve
+    [action - special] [slow]
+    Draw two cards.
+
+Toughness
+    [reaction]
+    When you take damage, you may discard this card to reduce that damage by 1.
+
+Weapon Mastery
+    [reaction]
+    When you play a card that grants you attack or defense, you may play this card at the same time.
+    Increase the amount of attack or defense gained by 2.
+
+
+Gust
+    [action - ranged attack] [regular] [any]
+    +1 vs fortitude, slide target 3 squares, 
+        interrupts (remove target's cards from stack)
+        staggers (target must discard a card, if able)
+
+    [modifier - ranged distraction] [regular]
+    -1 to any
+
+Wind Wall
+    [modifier - ranged defense] [regular]
+    +3 defense
+
+    [modifier - ranged distraction] [regular]
+    -1 to any
+
+Sucker Punch
+    [action - melee attack] [fast]
+    +1 attack, interrupts (remove target's cards from stack)
+
+Coup de Grace
+    [action - melee attack] [slow]
+    +3 attack, kills, ignores armor
+
+Leap
+    [action - move] [fast]
+    Move 2 squares.
+    Combo (you may play this card, even if you have another on the stack)
+
+Keen Senses
+    [5 perception, 5 reflex, ]
+    [action - special] [passive]
+
+Hide
+    [action - special] [slow]
+    You become hidden. Enemies know your general location, but cannot target your directly.
+    Enemies may discard any card to
+    - 
+
+
+Dash
+    [p2, r5, f1, w1]
+    [action - movement] [regular]
+    When discarded to move, add a blank card to your hand.
+
+
+4 sample battles
+
+goblin ambush 
+    (2 fighters, 2 archers) (8 AP)
+    ridge with forest behind
+    cart for cover
+
+fort entrance
+    (1 archer, 1 fighter, 3 wolves) (10 AP)
+    wolves come running from kennel if too much noise
+
+goblin barracks
+    (5 unarmed goblins, 1 armed) (12 AP, but most of it bad)
+
+pools
+    (2 fighters)
+boss 
+    (1 bugbear) (6 AP, + probably the two goblins from earlier = 10 AP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

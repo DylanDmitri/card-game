@@ -1,0 +1,180 @@
+Character Tracks
+
+Fighter Attack Cards 
+
+[action : melee attack]
+    attack -vs- defense, effect
+[modifier : melee distraction]
+    -x to defense 
+[action : move 2]
+
+
+Things you can change 
+
+    1 attack priority (fast, medium, slow)
+        typical is medium
+    2 attack targets 
+        typical is single target
+        chess squares (single enemy, multiple enemies, reach, reach only)
+    3 attack bonus (to hit)
+        typical is +1
+    4 attack effect (interrupt, stagger x, stun, prone, kill, piercing)
+    5 distraction amount
+    6 move amount 
+    7 move speed
+    8 muscle
+    9 perception
+
+    special:
+        stat used for attack 
+        stat used for defense 
+        pursuing [for opportunity attacks]
+
+    1 attack 
+    2 effect 
+    3 distract 
+    4 move priority
+    5 move distance
+
+Simple Strike
+    +1 vs defense, kills
+    distract 2
+    slow move 3
+
+More Mobility
+    +0 vs defense, kills 
+    move 3 
+
+More offense
+    +2 vs defense, kills 
+    slow move 2
+
+No Nonsense
+    +3 vs defense, kills
+
+
+rougues have - rapier, dagger, scimitar
+
+
+Common Weapons
+    Sword - parry
+    Spear - reach
+    Club  - staggering
+    Axe   - cleave
+
+
+Imperial Shortsword 
+    3x Simple Strike
+        +1 vs defense, kills
+        distract 2
+        slow move 3
+
+    2x Efficient Defense
+        +2 defense. On block, draw a card.
+        move 3
+
+
+Bandit's Club
+    1x Power Attack
+
+
+    2x Clobber
+        +0 vs defense, kills
+        slow move 4
+
+    2x Headbutt
+
+        +2 vs defense, stagger 2
+        distract 2
+        slow move 2
+
+
+Goblin Scimitar
+    2x Dramatic Swing
+        +0 vs defense, staggers 1
+        distract 4
+        slow move 3
+
+    1x Slash
+        +0 vs defense, kills
+        move 4
+
+    2x Clumsy Block
+        +2 melee defense
+        slow move 2
+
+
+
+
+----------
+Core Fighter Track
+
+    1x Grim Resolve
+        +2 [square]
+        +2 [circle]
+        special action - draw 2 cards
+
+    2x Toughness
+        +3 [square]
+        reaction: when you take damage - reduce damage by 1
+
+    2x Weapon Skill
+        +1 [circle]
+        reaction: after rolling for attack or defense - gain +1
+        action - move 3
+
+
+----------
+Core Rogue Track
+    
+    1x Keen Senses
+        +5 [square]
+        action - move 4
+
+    2x Leap
+        fast action - jump 2
+            combo (you may play this action even if you have another card on the stack)
+            jump (ignore terrain effects)
+
+    2x Preperation
+    "You perform some action stealthily: drawing a hidden knife, posioning a blade, etc."
+    "The unexpectedness makes your next action extra deadly."
+        +2 [circle]
+        action - special
+            add a special event on top of the stack
+                all enemies make a ranged attack against you
+                ```perception -vs- perception, interrupt```
+            you gain the "stealth" status
+                the next card you play breaks stealth. When this happens
+                    for the duration of the current sequence stack
+                    whenever you play a card you may choose to increase its priority by one stage.
+                note: you may also discard rather than playing
+
+
+
+
+
+
+
+
+
+----------
+pick two of the following
+
+
+Sword
+Archery
+Shield
+Armor
+
+
+
+
+
+
+
+
+
+
+
+
