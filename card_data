@@ -10,6 +10,11 @@ Toughness
 		negate staggered effect
 	3 stubborness
 
+Weapon Skill
+	discard: +1 attack
+	discard: +1 defense
+	1 perception
+
 Keen Senses
 	run 4
 	perception4
@@ -30,7 +35,7 @@ Light of Wisdom
 
 Light of Vigor
 	aura: while this is in your hand
-		you and allies have +1 stuborness
+		you and allies have +1 stubborness
 
 Intercession
 	discard
@@ -50,7 +55,7 @@ Simple Strike
 	distract 2
 	run 3
 
-Efficient Defense
+Efficient Parry
 	melee block
 		+2 defense
 		on block, draw a card
@@ -208,22 +213,4 @@ Fissure
 		+0 vs perception, staggers
 		leaves difficult terrain
 		+3 to climb, blocks line of sight
-
-
-
-
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
 
