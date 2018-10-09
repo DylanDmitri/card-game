@@ -1,11 +1,12 @@
 Grim Resolve
 	discard
 		draw 2 cards
-	2 perception, 2 stubborness
+	2 perception
+	2 stubborness
 
 Toughness
 	discard
-		reduce incoming damage by 1
+		ignore 1 damage
 	discard
 		negate staggered effect
 	3 stubborness
@@ -17,7 +18,7 @@ Weapon Skill
 
 Keen Senses
 	run 4
-	perception4
+	4 perception
 
 Leap
 	fast combo action
@@ -25,17 +26,20 @@ Leap
 
 Dirty Trick
 	action 
-		perception contest each enemy
+		with each enemy
+			perception contest 
 		if you win all, stealth
-	perception2
+	2 perception
 
 Light of Wisdom
-	aura: while in your hand
-		you and allies have +1 perception
+	while in your hand
+		you and allies
+		+1 perception, stacking
 
 Light of Vigor
-	aura: while this is in your hand
-		you and allies have +1 stubborness
+	while in your hand
+		you and allies
+		+1 perception, stacking
 
 Intercession
 	discard
@@ -56,7 +60,7 @@ Simple Strike
 	run 3
 
 Efficient Parry
-	melee block
+	block: melee
 		+2 defense
 		on block, draw a card
 	run 3
@@ -75,7 +79,7 @@ Slash
 	run 4
 
 Clumsy Block
-	melee block
+	block: melee
 		+2 defense
 	walk 2
 
@@ -92,8 +96,8 @@ Clobber
 
 Headbutt
 	melee attack
-		Stubborness contest.
-		Lose by X -> staggered by X
+		stubborness contest
+		loser staggered DIFF
 	walk 2
 
 Quick Slap
@@ -103,26 +107,27 @@ Quick Slap
 
 Coup de Grace
 	slow melee attack
-		perception contest, lethal 3
+		perception contest
+		lethal 3
 	walk 2
 
 Dash
 	run 8
-	toughness1
+	1 stubborness
 
 Snipe
-	range5 attack
+	range 5 attack
 		+0 vs defense, lethal
 	run 4
-	perception1
+	1 perception
 
 Arcing Shot
-	slow range8 attack
+	slow range 8 attack
 		+2 vs defense, lethal
 	walk 4
 
 Covering Fire
-	range8 attack
+	range 8 attack
 		+1 vs defense, staggers
 	interfere 2
 	walk 3
@@ -139,18 +144,18 @@ Stab
 	walk 3
 
 Nimble Block
-	melee block
+	block: melee
 		+2 defense
 		on block, move 1
 
 Shield Block
-	block, +4 defense
+	block: +4 defense
 	move 4
 
 Shield Bash
 	block
 		+2 defense	
-		on blocking a melee attack, 
+		on block: melee, 
 			stagger attacker
 
 Reliable Defense
@@ -169,32 +174,35 @@ Clunk
 
 Efficient Armor
 	discard
-		prevent 1 incoming damage
+		ignore 1 damage
 		draw a card
 
 Sturdy Armor
 	discard
-		prevent 1 incoming damage	
+		ignore 1 damage	
 	1 stubborness
 
 Flash Freeze
-	cone2 attack
-		+0 vs perception, staggers 2
+	conic 2 attack
+		+0 vs stubborness
+		staggers 2
 	run 3
 
 Encumbering Frost
-	range3 modifier
-		-3 move, stubborness resist
-	range3 modifier
-		negate an enemy modifier
+	range 3 modifier
+		-3 move
+		stubborness resist
+	range 3 modifier
+		negate one modifier
 
 Stunning Blow
 	melee attack
-		+2 vs defense, staggers 1
+		+0 vs defense, staggers 2
 
 Gust
-	range5 action
-		slide line3, stubborness resist
+	range 5 action
+		slide linear 3, 
+			stubborness resist
 	run 5, jump
 
 Wind Wall
@@ -205,11 +213,12 @@ Wind Wall
 
 Brutal Headbutt
 	melee attack
-		stuborness contest, loser prone
+		stuborness contest
+		loser prone
 	2 stubborness
 
 Fissure
-	line5 aoe attack
+	linear 5 aoe attack
 		+0 vs perception, staggers
 		leaves difficult terrain
 		+3 to climb, blocks line of sight
