@@ -1,0 +1,341 @@
+GNOMES IN SPACE
+
+
+The "mech shell" is your base class.
+Determines which modules you can comfortably equip.
+
+Players will have a big piece of paper, with mech shell info.
+Also general game info.
+
+They will also have a deck.
+
+
+Mech Shell
+
+	5 cards
+		they can do different stuff!
+
+	cpu and hull
+		class cards contain the biggest bonuses
+		maybe each mech has a baseline as well
+
+	heat capacity + cooling rate
+		determines how powerful of modules you can equip
+		you take damage if you overheat
+
+	some number of module slots
+		each module adds 5 slots
+		can make different types of modules
+			ie "weapon" vs "utility" vs "armor"
+
+	baseline mech options
+		default movement
+		default attack
+
+
+Damage and Overheating
+
+	You have two tracks, [heat] and [structure damage]. Both start at 0.
+
+	Attacks usually deal one of the following
+
+	interrupt 	: cancel cards currently on stack. 
+	knockback X : interrupt, then slide backwards X squares. If you hit an obstacle, convert remaining knockback to stagger.
+	stagger X 	: interrupt, then discard X cards. If you can't discard, convert remaining stagger to structure damage.
+	
+	X thermal damage : add X to your heat track
+	X structure damage : for each point of damage,
+
+		increment your [structure damage] track
+		roll a d6 for each [structure damage] you you. Take the lowest roll:
+			5-6 : Just the armor! No effect 
+			2-4 : Destroy random module. (keep cards, just they have no effect)
+			1   : Mech destroyed.
+
+		Broken modules can be repaired in combat, but structural damage can't.
+
+
+Overheating
+
+	Stronger cards can be balanced by higher heat costs.
+	Some cards can might have optional heat costs, or a spent 1 heat per
+
+	If heat hits the maximum, something bad happens
+	maybe
+		after your current heat changes, 
+		if it's greater than your max, 
+		take one point of structural damage.
+
+	Each round, when you draw new cards, your mech cools by its [cooling rate]
+
+Chassis Specific Actions
+
+	Discard any card to
+		walk 1
+		punch
+
+	Discard any three cards to
+		fully vent, clearing all heat
+
+Protocols
+
+	passive bonuses, flavored as AI
+	each mech can have only one active 
+
+
+
+
+
+
+
+
+Everest (Tier II - general purpose)
+	"A plainly designed and cost-effective chassis."
+
+	1 primary weapon
+	1 hardpoint
+
+	heat capacity 5, cooling 1
+	
+	Passive - Simple Lines
+		Tier 2 mechs typically draw 2 cards per round. Instead,
+		At the start of each round, draw three cards and choose one to discard.
+
+	Actives - Functional Grace
+		Play any card to `move 3`
+		Play any card to `punch: +0 vs Hull, stagger 1 or knockback 1`
+		Full round action to `reboot: discard all attatched programs`
+
+	Passive - Sturdy Bulk
+		If you are at 1 [structure damage], add 2 to your damage save.
+
+
+Drake (Tier III - defensive)
+	"A heavily armored shell, built around a single-cast bulkhead."
+
+	1 primary weapon
+	1 hardpoint
+
+	heat capacity 7, cooling 0
+
+	Large size (2x2 grid)
+	+1 hull (stacking)
+	
+	Passive
+		
+
+	Actives
+		Play any card to `move 3`
+
+
+Swallowtail (Tier III - scout)
+	
+
+
+
+
+
+Assault Rifle  
+	(primary weapon)
+	"Practical and reliable, a galactic standard. Shoot outside the battlefield to reload."
+	
+	1x Integrated Targetting
+		-- program --
+		while installed
+			passive: +1 accuracy on ranged attacks
+			if you have at least 2 CPU, gain +2 accuracy instead
+
+	1x Reload
+		"Ka-chunk!"
+		(You may spend this card on default mech actions.)
+
+	3x Burst Fire
+		-- attack, range 10 --
+		[+1] vs [evasion], [1] structure damage
+
+		-- quick move 2 -- 
+
+
+Nanocarbon Sword 
+	"A ultralight blade, enables a mech's natural mobility. Devastating at close range."
+	(primary weapon)
+
+	1x Leap
+		-- move 3 --
+		jumping (passes over terrain)
+		combo (may be played even with another card on the stack)
+
+	2x Slice
+		-- action -- 
+		move 1, then
+		make a melee attack, [+3] vs [evasion], [1] structure damage
+		if you have at least 1 HULL, deal 2 structure damage instead
+
+	2x Parry
+		-- self --
+		+2 Evasion. If you block, move 1.
+
+		passive: 1 hull
+
+
+Plasma Cannon
+	(primary weapon or hardpoint)
+
+	3x Plasma Beam
+		-- attack, range 15 --
+		[+0] vs [evasion], [1] structure damage
+		afterwards, you take 1 heat
+
+		-- slow attack, linear 20 --
+		[+3] vs [evasion], [2] structure damage
+		afterwards, you take 3 heat
+
+	2x Concussive Shot
+		-- attack, range 5 --
+		[+0] vs [hull], knockback [DIFF] or until end of range.
+
+
+Artillery Launcher
+	(hardpoint)
+
+	2x Missile Barrage
+		fire two missiles. Both have
+		-- attack, range 10, ignores cover --
+		[+0] vs [hull], slide 1
+
+	2x Grenade
+		-- thrown, range 5, scatter 1 --
+			(Target a square, rather than a mech. Can be bounced of walls.)
+			(randomly 0 or 1 offset, in a random direction)
+		direct hit: [+3] vs [hull], staggers 2
+		burst 1: knockback 2, hull resists
+
+	1x EMP Grenade
+		-- 
+
+Hacking Rig
+	(hardpoint)
+
+	1x Hyperthreader
+		-- program --
+		while installed
+			passive: 1 CPU
+			passive: 2 CPU, take 2 heat
+
+	2x Disrupt
+		-- cyber attack -- 
+		[CPU] contest
+		if you win,
+			target reveals their hand
+			force them to discard either a card from their hand, or an active program
+
+	2x Infect
+		-- cyber attack --
+		[CPU] contest
+		if you win, choose [DIFF] virus cards to attach to target
+			clog: Target's CPU may not exceed 0.
+			stab: At any point, discard this to give target -2 on a roll
+			boil: Set target's cooling rate to -2 (they gain 2 heat per turn)
+
+
+Armor Plating
+	(hardpoint)
+	
+	1x Grapple
+		-- melee attack --
+		[hull] contest
+		winner throws the loser [DIFF] spaces,
+
+	3x Armor
+		passive: When rolling your damage save, roll one fewer die.
+		passive: 2 hull
+
+	1x Clunk
+		(turns out that armor is heavy)
+		You may not discard this card to move.
+
+
+Shield Generator
+	(hardpoint or interior)
+
+	1x Vent Reactor
+		-- full round action --
+		(May only be played if your hand is full. Discard your hand.)
+		Set your heat to 0.
+		For every 4 points of heat you dump this way, all adjacent mechs take 1 thermal damage.
+
+	1x Integrated Circuit
+		passive: 1 CPU
+
+	3x Force Field
+		-- modifier, mech in range [CPU] --
+		Absorb 1 point of incoming structure damage.
+		Afterwards, you take 3 heat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General Weapons
+	Assault Rifle
+	Charged Blade
+	Drone Nexus
+	Heavy Machine Gun
+	Howitzer
+	Missile Rack
+
+	revolver
+	machinegun
+	assault rifle
+	triple machinegun
+	smartgun
+	smg (innacurate, high damage)
+
+	shotgun
+	eraser
+	flak cannon
+	slugger
+
+	crossbow
+
+
+	grenades
+	deployable cover
+	smoke grenade
+
+
+	AI protocols (activate on draw, one active at a time)
+
+	Jetpack
+
+
+
+Everest
+	size 1, armor 0, sp 0
+	+ action economy
+
+Drake
+	size 2, armor 3, sp 5
+	+ huge shield

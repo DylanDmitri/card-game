@@ -17,6 +17,7 @@ Weapon Skill
 	1 perception
 
 Keen Senses
+-- Legolas! What do your elf eyes see?
 	run 4
 	4 perception
 
@@ -135,12 +136,12 @@ Covering Fire
 Lunging Stab
 	reach attack
 		gain (move 1)
-		+0 vs defense, kills
+		+0 vs defense, lethal
 	run 4
 
 Stab
 	reach attack
-		+0 vs defense, kills
+		+0 vs defense, lethal
 	walk 3
 
 Nimble Block
@@ -198,6 +199,7 @@ Encumbering Frost
 Stunning Blow
 	melee attack
 		+0 vs defense, staggers 2
+	walk 2
 
 Gust
 	range 5 action
@@ -222,4 +224,8 @@ Fissure
 		+0 vs perception, staggers
 		leaves difficult terrain
 		+3 to climb, blocks line of sight
+
+It's a Trap!
+	Discard
+		Cancel all cards on the stack.
 
