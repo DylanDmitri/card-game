@@ -1,0 +1,380 @@
+LANCER CCG
+
+Relative Power Scaling
+
+
+Pilot Gear
+	Gives 1 or 2 cards.
+	Max stat bonus of +1.
+
+Subsystem
+	Gives 3 or 4 cards.
+	Max stat bonus of +1
+
+Standard Mech Module
+	Gives 5 cards
+	Max stat bonus of +2
+
+Heavy Mech Module
+	Gives 10 cards
+	Max stat bonus of +3
+
+
+
+t0: Squishy class. 
+	Regular person with a pistol, quadcopter with a camera.
+	Mostly useful as distractions.
+
+	Rolls a d2 (d6//3)
+ 	No deck or cards, can perform one action per turn.
+ 	Pilot Gear only.
+
+t1: Imp class. 
+	Professional soldier, or heavy drone with weapons system.
+	Can be annoying about one thing.
+
+	Rolls a d4.
+ 	10 card deck, draws 2 per turn.
+ 	Pilot gear and subsystems.
+
+t2: Foliot class. 
+	Simple stock mechs, often used in construction and agriculture.
+	Practical and cost-effective.
+
+	Rolls a d6.
+ 	15 card deck, draws 3 per turn, can hold 1 between turns
+ 	Subsystems and standard mech modules
+
+t3: Djinn class.
+	The first true mechs.
+	Useful as solo operatives, or leading strike teams.
+
+	Rolls a d8.
+ 	20 card deck, draw 4 per turn, can hold 1 between turns
+ 	Standard mech modules only
+
+t4: Efrit class.
+	Pushes the limit of what mechs can do.
+	Corps will keep a couple on hand for emergencies.
+
+	Rolls a d10.
+ 	25 card deck, draw 5 per turn, can hold 2 between turns
+ 	Standard and heavy mech modules
+
+t5: Marid class
+	Legendary mechs, most are known individually.
+	Rarely, if ever, seen.
+
+	Rolls a d12
+	30 card deck, draws 6 per turn, can hold 2 between turns
+	Standard and heavy mech modules
+
+
+A team can typically take out something one tier higher.
+With a two-tier discrepency, the situation is probably hopeless.
+
+Extra damage for tier advantage ??
+	additional knockback and stagger ??
+
+
+Attack Types
+
+	shrapnel X
+		deals X kinetic damage and X knockback
+		hull substracts first from kinetic, and second from knockback
+		
+	kinetic damage
+		usually: [+accuracy] vs [evasion]
+		deals structure damage directly
+
+	thermal damage
+		fills up target's heat capacity
+		when it's full, causes structure damage by overheating
+
+	knockback
+		incoming knockback is passively reduced by hull
+		if crashes into a wall, convert remaining knockback to concussive damage
+
+	concussive damage
+		usually: [+explosives] vs [hull]
+		target discards cards randomly
+		if their hand is empty, convert to structure damage
+
+
+Define more tags. Use these for rich interactions.
+
+
+Stats
+
+	agility
+		movement speed
+		priority
+		evasion
+
+	hull
+		toughness
+		strength
+		resilience
+
+	cpu
+		magic / hacking
+
+	systems and heat
+
+
+
+Only one card per unit per stack.
+
+One team chooses a member to play a standard or slow action.
+Every character may play one card on top of that.
+Cards resolve from the fastest mech to the slowest.
+
+The base mech-frame is foliot tier
+Higher-tier mech are simply the base mech frame, with upgrades applied on top.
+Every three upgrades increases the tier by one.
+
+
+===============
+TIER 0 - Pilots
+
+When you take direct damage, increase your "wounds" by one
+Then, roll a d6 for each wound you have, and take the lowest
+
+  	4-6  okay
+	2-3  incapacitated
+	  1  out of action
+
+	roll two or more ones = dead
+
+	Incapacitated = only action is crawl 1 space
+	Out of Action = unconscious
+
+
+Pilot Gear
+	Light items grant one card
+	Heavy items grant two cards
+
+Pilots can have
+	1 piece of armor
+	any number of weapons
+	any number of utility items
+
+Pilots may have at most 5 cards from equipment
+	level 1: three cards
+	level 2: four cards
+	level 3: five cards
+
+
+
+All pilots have the following attributes
+
+	No heat capacitance; take thermal damage directly.
+	No handsize; take concussive damage directly.
+	Organic; immune to cyber attacks.
+
+	Improvised Weapon (default actions)
+	   Wallop
+	    | target enemy, melee
+	    |   choose (knockback 1) or (concussive 1)
+
+	   Fling
+	    | (standard) or (reaction)
+	    | target enemy, range 3
+	    |   +0 vs evasion, knockback 1 
+
+	Walk
+	 > movement action
+	 | move 3 sqauares
+
+
+GMS Pilot Equipment
+
+	Light Armor (pilot armor, light)
+		default action: move 4
+
+		| passive: +1 Evasion
+		| passive: on damage saves, roll each die twice taking the higher result
+
+	Plascrete Carrapace (pilot armor, heavy, repairable)
+		default action: move 3
+
+	    Ablative Shielding
+	    | passive: (1 shrapnel resistance)
+		| destroy to add 2 to a single damage save roll
+
+	    Ablative Shielding
+	    | passive: (1 shrapnel resistance)
+		| destroy to add 2 to a single damage save roll
+
+		Out of combat, one repair will restore 1 Ablative Shielding
+
+
+	Pistol (pilot weapon, light)
+		> attack action
+		| enemy within range 5
+	 	|	+0 vs evasion, kinetic 1
+
+	Rifle (pilot weapon, heavy)
+	    > attack action
+	    | enemy within range 10
+	    |   +1 vs evasion, kinetic 1
+
+	    > support reaction : Tracer Rounds
+	    | enemy within range 10
+	    |   grant an ally +1 accuracy
+	    |   does not stack with itself
+
+
+	Frag Grenade (pilot consumable, weight 1)
+		> attack action
+		| toss the grenade:
+		| 	target square, thrown 5
+		|     (can bounce off walls and cover)
+		|   discard this card
+		| <> characters may play reactions
+		| the grenade bounces randomly
+		|   roll a d2, to get either a 0 or 1 square offset
+		|   roll a d8, to get the direction of the offset
+		| then explodes
+		|   direct hit: 
+		|		[+3] vs [hull], concussive 2
+		|   burst 1:
+		|       shrapnel 1
+
+	Med Pack (pilot consumable, weight 1)
+		> support action
+		> you may use this while incapacitated
+		| unit within range 1, choose 1 effect
+		|   stabilize out-of-action unit
+		|   remove incapacitated condition
+
+		out of combat, heals one wound over the course of an hour
+
+	Repair Kit (pilot consumable, weight 1)
+		out of combat, can be used to repair damaged mechs and equipment
+
+
+
+COLOR PIE
+
+	IPSIPS Northstar
+	Smith-Shimano Corporation
+	H0RUS Collective
+	Harrison Armory
+
+
+
+
+
+
+
+IPS-N Pilot Equipment - Close Quarters
+
+	Goliath Weave (t1 pilot armor)
+		added hull, carry extra consumables
+
+	Hackiron (t1 melee weapon)
+		smaench
+	
+	Flechette Gun (t1 pilot weapon)
+		> attack action
+		| linear 5, shrapnel 1 + knockback 1
+
+		> attack action
+		| cone 3, shrapnel 1
+
+	Grappling Hook
+
+	Breaching Charge (pilot consumable, heavy)
+	"25 pounds of high explosives"
+		> Attack Action
+		| Choose a movement option
+		|    Roll - straight line, distance depends on terrain. On smooth floor, may roll for several rounds.
+		|    Toss - thrown five, with a single random bounce
+		|    Stick - melee attack, attaches the charge to a smooth surface
+
+		> Attack Action : Detonate
+		| If the charge is attatched to a target, deal 2 kinetic and 3 thermal damage.
+		| Otherwise, deal 2 thermal damage in radius 2
+
+
+
+SSC Pilot Equipment - Cunning Boys in Black
+	
+	Plasma Bolt Rifle
+
+	Arc Blade
+
+	EVA Suit (pilot armor, light, rechargeable)
+	   Manuevering Thrusters
+		| passive: 1 evasion
+		| passive: move an additional square on "movement actions"
+		> movement reaction
+		|   jump 4 (=3+1), discard this card
+
+	Rougue Stealth Armor
+
+	Recon Drone
+
+	Power Pack (pilot consumable, light)
+		Out of combat only. Restore "rechargeable" weapons.
+
+
+
+HORUS Pilot Equipment - Wise Boys in Blue
+
+
+HARRISON Pilot Equipment - Dreamy Boys in Green
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pilot skills and talents
+
+activate grenade while incapacitated
+	should be "with -3" accurcay
+	or "with -3 on your attack roll"
+	but because grenades don't have an ttac roll it's god
+
+
+
+ grit
+ acquire
+ brawl
+ command
+ flash
+ infiltrate
+ investigate
+ manuever
+ notice
+ persuade
+ survive
+ tech
+
+
+
+
+

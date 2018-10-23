@@ -1,0 +1,124 @@
+==== Talents ====
+
+
+
+
+AS YOU LEVEL
+			   p s  
+tier 0 ::  d4  1 1
+
+tier 1 ::  d6  1 2 
+tier 2 ::  d8  1 3
+tier 3 :: d10  2 3
+tier 4 :: d12  2 4
+
+
+Pick a new upgrade each level. Upgrades are permanent. 
+There are 3 levels per tier.
+
+
+Base Mech
+
+	1 primary weapon
+	1 exterior mount
+
+	5 heat capacity, 0 cooling rate
+
+	+0 HULL
+	+0 CPU
+
+
+	You may discard any card to use the following actions:
+		
+		Walk
+		| slow action, move 3
+
+		Punch
+		| melee attack
+		|	+0 vs HULL, stagger 1 or knockback 1
+		
+		Cool
+		| standard action
+		|   dump 1 heat
+
+		Reboot
+		| slow full-round action
+		|   discard all programs attatched to you
+
+
+
+
+
+
+
+=======================================
+==== General Massive Systems (GMS) ====
+=======================================
+
+---------------------------------
+GMS Mech Upgrades
+
+	Systems Redundancy
+		If you are at 1 [structure damage], add 2 to your damage save.
+		This usually means: If you take damage at full health, nothing bad happens.
+
+	Passive - Fuel Injectors
+		Before you draw, scry 1
+
+	Auto Stabilizers 
+		Add the following card to your deck:
+
+			Auto Stabilizers
+			| program, always on (you may begin combat with this program active)
+			| while active
+			| 	+1 accuracy to attacks with your primary weapon
+			| 	if you have at least 2 CPU, grants +2 accuracy instead
+
+	Ol' Reliable
+		At the start of combat, draw two starting hands. 
+		Shuffle one of them back into your deck.
+
+----------------------------------
+
+---------------------------
+
+Assault Rifle  
+	(primary weapon)
+	"Practical and reliable, a galactic standard. Shoot outside the battlefield to reload."
+	
+	1x Special Ammunition
+		| Smoke Streamer
+		| linear 10
+		| 	create terrain that blocks line-of-sight but not movement
+
+		| Concussive Rocket
+		| target mech, range 10
+		|   knockback 1
+		|   +0 vs HULL, stagger 1
+
+	1x Reload
+		| "Ka-chunk!"
+		| (You may spend this card on default mech actions.)
+
+	3x Supressing Fire
+		| attack, range 10
+		|   +1 vs evasion, 1 kinetic damage
+
+		| modifier, range 10
+		|   give mech -2 accuracy
+
+		| Quick Step
+		| move 2
+
+
+Shotgun
+	(primary weapon)
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,439 @@
+
+
+Just tier 1s
+
+basic attack
+    +0 to hit, 2 damage 
+
+    
+
+warlock     You and GM gain d12, locks you out until GM uses.
+            Scry
+            Magic attack: +1 range, damage=heat. On a miss, take 1 damage.
+            Binding Shackles
+thief       Gain a d10 on learning a deep dark secret or stealing a priceless treasure.
+            ? sig 
+            ?
+            ?
+bard        People can't say no to you. Gain a d8 when bamboozling.
+            quickness
+            vicious mockery 
+            dodge 
+beggar      Gain a d20 once per quest.
+            Share a drink.
+            Improvised weapon.
+            Drunken master.
+monk        Gain a d8 on taking a nice relaxing break.
+            Wise teacher.
+            Swat at flies. (might+breath->evasion)
+            Mountain Stance.
+paladin     Roll d10s when pursuing GUILTY CRIMINALS
+            Truesight, action gives to allies.
+            royal armory
+            heart of stone
+barbarian   Mega crit, gives rage for rest of combat.
+            Size up enemies.
+            Heal out of combat.
+            Reckless Technique.
+fated       Risk danger to save someone, get a d20.
+            Lead by Example.
+            Relic weapon, smight.
+            If you are wounded, gain +1 damage.            
+
+
+
+
+
+
+
+
+
+
+does it create excitement?
+building block not final project
+interactive initiative
+
+
+Warlock 
+    *** Mantra of Ambition ***
+        At any time, you may gain a d12 power die for use on the current roll.
+        When you activate it, the GM also gets a d12 power die, but can't spend it on this roll.
+        You can't use this again until the GM spends their die.
+
+    === SIG TRACK ===
+    Scry 
+        Outside of combat,
+        You can view a location you've been before as it currently is.
+        You can whisper a message to a willing ally, regardless of disance.
+    Teleport 
+        Target a location you've been before.
+        Ritual takes 1 minute for just yourself. Each additional person doubles the time.
+    Dimensional House 
+        As an action, summon the door to your house in a conveniant wall.
+        It dissapears once you and all allies enter.
+        The house is spacious and comfy, and comes staffed with invisible servants.
+
+    === BLOOD MAGIC ===
+
+
+
+    === RUNE MAGIC ===
+    t1 
+        basic attack: range 
+    t2 
+
+    t3
+
+
+
+Protagonist
+    *** Mantra of Loyalty ***
+        When you put yourself in mortal danger to save someone,
+            and if that someone expresses sincere grattitude,
+                gain a d20 power die, which lasts until it is used.
+        When you show mercy to a dangerous and deadly enemy,
+            if that enemy has a change of heart and expresses sincere grattitude,
+                gain a d20 power die, which lasts until it is used.
+            if that enemy continues in their evil ways,
+                they owe you a favor later, whether they want to or not.
+
+    === SIG TRACK ===
+    t1 Selfless Leader  
+        You may give your d20 to an ally to use on a roll they are currently making.
+    t2 Bender of Fate 
+        Spend one flame point. Re-roll any die.
+    t3 Fierocity of Will 
+        Once per scene, after the GM finishes describing a character, location, or item 
+        you may add one detail in the form of a sentence the begins with "Yes, and fortunately..."
+
+    === Smiting ===
+    t1 
+        Relic weapon: +1 vs evasion, 2 damage.
+        Spend one flame point. Gain +1 damage and +1 to hit.
+    t2 Unbearable Radiance
+        Spend a flame point, and roll +heat. 
+        If you roll under a five, the spell fizzles; you take one damage and lose an action.
+        If you roll a five or over, create a blast of energy hitting everyone in your area.
+            all enemies lose an action
+            all enemies take 1 piercing damage (direct to hp, unavoidable)
+    t3 Unspeakable Glory
+        You utter a syllable power, causing a massive explosive.
+        Deals 5 damage at close range, 3 piercing damage in adjacent areas.
+        Damages everyone unconditionally -- yourself, enemies, and allies.
+        Causes moderate structural damage, and leaves a smoking crater.
+        
+    === Tenacity ===
+    t1
+        If you have taken a wound this encounter, gain +1 damage. 
+    t2 
+        If you kill an enemy, and have no stamina left, restore one stamina.
+        then, for the rest of the encounter, damage dealt to your stamina does not overflow into HP.
+    t2 Plot Armor
+        When an attack would kill you, roll a die. 
+        Reduce the attack's damage by the amount you rolled, to a minimum of 0 damage.
+        note: synergizes well with the mantra, helps you take bullets
+
+
+Barbarian
+    *** Mantra of Meti the Bloody ***
+        When making a basic attack,
+            if you roll max value and they roll min value, 
+            your basic attack crits.
+        When you crit,
+            your attack deals 100 base damage.
+        If this damage kills an enemy of equal or greater tier,
+            gain a d12 fury die which lasts until the end of combat.
+            all attacks made with your fury die crit (assuming they connect).
+
+    === SIG TRACK ===
+    Hunter's Eye
+        You passively know the tiers of all enemies you are fighting.
+        As an action, you may learn the current hp and weaknesses of any one enemy.
+    Cull the Weak
+        Against enemies of a lower tier than you, all your basic attacks crit.
+    Slay the Gods and Topple their Thrones
+        As an action, shout a challenge to an enemy who is at least 3 levels higher than you.
+            (You may have one challenge at a time. A challenge only ends when the target dies or leaves combat.)
+        While you have an active challenge,
+            you are immune to all damage and adverse effects not directly originating from the challenged enemy.
+            (if the boss picks up a mountain and hits you with it, you take damage)
+            (if the boss fireballs the mountain to cause a landslide, you are immune)
+    
+    === Inner Vitality ===
+    Quick Healer
+        Outside of combat.
+        Spend 1 flame point, set your health equal to your might.
+    Glory in Battle 
+        When you kill an enemy, you may choose to proc Quick Healer.
+    Relentless
+        Your HP may go negative. 
+        When you take damage that leaves you negative, make a might save -vs- |your hp|
+        If you fail, you fall unconscious.
+    
+    === Beserker's Blood ===
+    Reckless Technique
+        Your attack deals +1 damage, but you take +1 damage from all sources during the attack.
+    Retaliate
+        After taking X HP damage from an attack, you may spend an action to counterattack.
+        This counterattack has +X to hit and deals +X damage.
+    Borp's Blow
+        Make a basic attack, ignoring all modifiers (just dice nothing added),
+            on a hit, square your damage done.
+        If you would roll your class signature die for this attack, 
+            this can target any enemy you can see, and teleports you behind them.
+
+Law 
+    Mantra of JUSTICE
+        Choose three tenents: killing of innocents is forbidden, X is punishable by Y, no tresspassing in Z
+        People who break these tenents are GUILTY CRIMINALS. 
+        While in hot pursuit of GUILTY CRIMINALS, you may roll d10s at all times.
+    Truesight 
+        You can see through lies and bullshit.
+        As an action, you can share this sight with your allies.
+    Royal armory
+        Gain 1 passive armor and damage.
+    Heart of Stone 
+        Spend an action.
+        Reduce the damage of all incoming attacks by 5, to a minimum of 1.
+
+
+Monk 
+    Mantra of Leisure
+        When you take a break, make some tea, play a board game, etc 
+        You are well-rested and have a d8 power die to spend on something.
+    Wise Mentor 
+        Take an action, grant +1 to an ally, doesn't stack.
+    Mountain Rooting Stance 
+        At start of turn, spend one stamina.
+        You plant your feet, and gain immense strength.
+        All attacks hit you, but reduce incoming damage by 3.
+        Can be used to catch falling buildings, etc.
+    Shifting Willow Stance 
+        At start of turn, declare this dance.
+        Halve the damage of incoming attacks. They deal damage directly to wounds.
+
+Beggar 
+
+
+
+
+
+
+Beggar
+
+
+    Swat 
+
+Bard 
+    Mantra of Persuasion
+        When you ask for a favor, propose a contract, or attempt to convince someone of something,
+            you may roll (wit vs breath) to attempt to bamboozle them.
+        If you succeed the roll,
+            They reluctantly agree, and cannot deny you what you ask or claim,
+            They may however attach some condition.
+        If you fail the roll, they either 
+            redirect you to someone else.
+            obfuscate their answer.
+            propose a counter-offer that's more favorable to them.
+        If you keep succeeding, you may use this multiple times to continue to sweeten the deal.
+        However, if you fail once, they distrust you (you lose accumulated bonuses and can't try again)
+    Talented
+        Pick three forms of art/dance/music/etc 
+        You are very good at them, and can impress people with your skill.
+    Vicious Mockery
+        May only be used if you have stamina remaining.
+        Roll (wit vs breath)
+        Target who can hear or see you loses one stamina.
+        You gain +3 evasion on their next attack against you.
+    Bardic Inspiration
+        Spend a heat point.
+        Target ally gains a flat bonus equal to your wit.
+
+Thief 
+    Mantra of Greed
+        When you steal a pricless artifact or deep dark secret,
+        gain a d10 power die. Lasts until used or item is lost.
+    Shadow Arts 
+        You can stealth.
+        (heat+wit) vs ()
+    Sneak Attack (heat based)
+        (at the start of combat, on breaking stealth)
+        Unavoidable, deal bonus damage equal to your heat.
+
+    Smoke and Mirrors (wit based)
+        Minor illusion.
+        In combat it can take a hit for you.
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WOWOWOWOW
+SO I HAVE TO SWAP
+THE FUCKIN THING 
+ROTATE THE WHOLE CIRCLE ONE CLICL
+THAT BAD BOY OOF OOF OOF
+
+                 
+                        
+          fated            rogue
+                  heat
+     
+    fury    might          wit     bard
+ 
+                  breath
+        law                  poet  
+                   monk
+
+
+heat
+accuracy
+wit 
+evasion
+breath 
+health 
+might 
+damage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+might wit breath heat 
+
+breath+wit->stamina
+breath+might->health
+
+heat -> flame points
+
+
+
+if a class is primary a stat, both use that stat
+if a class is primary an attribute, both give that attribute 
+
+
+detatch names from classes, flavor emerges from mechanics
+
+
+
+damage - mega crit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fury (might) (mega crit; who is weak who is strong, reach heaven through violence)
+
+    challenge a strong enemy, 
+    gain fury die at start of combat 
+
+    might/heat->HEALTH
+        between combats, one flame point restores (the might-based part of your health)
+        when you kill an enemy, you may activate this as a free action
+        hard to break: your wounds may go negative. roll with might vs your hp to stay alive 
+
+    might/breath->DAMAGE
+        reckless: your attacks deal +1 damage, but you take +1 damage too
+        you deal 1 extra damage per missing health 
+        master stroke: no modifiers, damage is squared
+    
+
+
+does it create excitement?
+building block not final project
+interactive initiative
+
+
+
+Barbarian
+
+    Mantra of Meti the Bloody
+        When making a basic attack,
+            if you roll max value and they roll min value 
+            deal 100 damage which may not be prevented or reduced
+        if this kills an enemy of equal or greater tier 
+            gain a d12 fury die which lasts until the end of combat 
+            attacks made with your fury die crit if they deal damage 
+
+    Size Enemies
+        At the start of combat, you know
+    Prey on Weak 
+    Prey on Strong 
+    
+
+    Quick Healer
+        Outside of combat 
+        Spend 1 flame point. Set your health equal to your might.
+    Glory in Battle 
+        When you kill an enemy, you may choose to proc Quick Healer.
+    Hard to Break 
+        Your HP may go negative. 
+        When you take damage that leaves you negative, make a might save -vs- abs(your hp)
+        If you fail, you fall unconscious.
+    
+    Reckless Technique
+        Your attack deals +1 damage, but you take +1 damage from all sources during the attack.
+    Retaliate
+        After taking X wounds from an attack, you may spend an action to counterattack.
+        This counterattack has +X to hit and deals +X damage.
+    Power Attack 
+        Make a basic attack, ignoring all modifiers (just dice nothing added),
+            on a hit, square your damage done.
+        If you would roll your classes signature die for this attack, 
+            this can target any enemy you can see, and teleports you behind them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

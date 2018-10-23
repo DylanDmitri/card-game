@@ -1,0 +1,79 @@
+
+might wit breath heat 
+
+breath+wit->stamina
+breath+might->health
+
+heat -> flame points
+
+
+
+if a class is primary a stat, both use that stat
+if a class is primary an attribute, both give that attribute 
+
+
+fury (might) (mega crit; who is weak who is strong, reach heaven through violence)
+
+    challenge a strong enemy, 
+    gain fury die at start of combat 
+
+    might/heat->HEALTH
+        between combats, one flame point restores (the might-based part of your health)
+        when you kill an enemy, you may activate this as a free action
+        hard to break: your wounds may go negative. roll with might vs your hp to stay alive 
+
+    might/breath->DAMAGE
+        reckless: your attacks deal +1 damage, but you take +1 damage too
+        you deal 1 extra damage per missing health 
+        master stroke: no modifiers, damage is squared
+    
+
+
+does it create excitement?
+building block not final project
+interactive initiative
+
+
+
+Barbarian
+
+    Mantra of Meti the Bloody
+        When making a basic attack,
+            if you roll max value and they roll min value 
+            deal 100 damage which may not be prevented or reduced
+        if this kills an enemy of equal or greater tier 
+            gain a d12 fury die which lasts until the end of combat 
+            attacks made with your fury die crit on hit
+
+    
+
+    Quick Healer
+        Outside of combat 
+        Spend 1 flame point. Set your health equal to your might.
+    Glory in Battle 
+        When you kill an enemy, you may choose to proc Quick Healer.
+    Hard to Break 
+        Your HP may go negative. 
+        When you take damage that leaves you negative, make a might save -vs- abs(your hp)
+        If you fail, you fall unconscious.
+    
+    Reckless Technique
+        You wield a large two-handed weapon.
+        
+            +0 vs AC,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+
+
+Each class has a basic attack.
+Each class has a mantra and power die.
+Each class has a signature track.
+Each class has two additional tracks.
+
+Heat gives flame points.
+Flame points are used to cast spells.
+
+Attacks are rolled either 
+    against wit (for reflex saves) (for slow attacks that deal heavy damage)
+    against breath (for will saves) (for mind-affecting and fear effects)
+    against might (for fort saves) (for quick attacks that deal low damage)
+
+Chracters have two HP bars
+    stamina, which is strong against single strong attacks 
+    health, which is strong against flurries of weak attacks
+
+Signature track is mostly flavor and out of combat utility.
+Most characters have a defensive and offensive track. 
+    Warlock has two offense, monk has two defense.
+
+
+warlock  ambition, scry, blood magic (accuracy), fireblast (damage)
+thief    greed, appraise, stealth, illusion
+bard     art, bamboozle, taunt, inspire
+beggar   none, share drink, improvise, 
+monk     relax, advice, 
+law      condemn, truesight, 
+fury     crit, sense, reckless, restorative
+fated    loyal, lead, smite, tenacity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+warlock     You and GM gain d12, locks you out until GM uses.
+            Scry
+            Magic attack: +1 range, damage=heat. On a miss, take 1 damage.
+            Binding Shackles
+thief       Gain a d10 on learning a deep dark secret or stealing a priceless treasure.
+            ? sig 
+            ?
+            ?
+bard        People can't say no to you. Gain a d8 when bamboozling.
+            quickness
+            vicious mockery 
+            dodge 
+beggar      Gain a d20 once per quest.
+            Share a drink.
+            Improvised weapon.
+            Drunken master.
+monk        Gain a d8 on taking a nice relaxing break.
+            Wise teacher.
+            Swat at flies. (might+breath->evasion)
+            Mountain Stance.
+paladin     Roll d10s when pursuing GUILTY CRIMINALS
+            Truesight, action gives to allies.
+            royal armory
+            heart of stone
+barbarian   Mega crit, gives rage for rest of combat.
+            Size up enemies.
+            Heal out of combat.
+            Reckless Technique.
+fated       Risk danger to save someone, get a d20.
+            Lead by Example.
+            Relic weapon, smight.
+            If you are wounded, gain +1 damage.            
+
+
+

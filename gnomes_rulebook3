@@ -1,0 +1,493 @@
+
+
+========================
+STATS AND FACTIONS
+
+(accuracy -vs- agility) to land a hit
+(damage -vs- armor) to deal damage
+
+cpu (accuracy)
+	enables sensors for tracking
+	enables cyber attacks for harassment
+
+armor
+	gives damage resistance
+	lets you wield heavy weapons
+	
+heat (damage)
+	enables powerful energy attacks
+	enables powerful computing
+
+speed (mobility)
+	gives dodging and evasion
+	move fast, leap over obstacles
+
+
+Weyland-Shimano Industries (white)
+	armor damage
+	construction company, big bulky industrial mechs
+	+ predictable effects
+
+The Jeeta Group (red)
+	damage accuracy
+	shadowy financial AI, disposable high-damage mechs
+
+Nanosoft Inc (blue)
+	accuracy + evasion
+	software and data company, light scout/support mechs
+	+ volatile effects
+
+The Spacer Collective (black)
+	armor evasion
+	asteroid dwelling artists, scappy custom mechs
+
+
+========================
+TIERS OF GAMEPLAY
+
+t1 human class
+	d2, 1 action, no cards
+	regular quadcopter, regular human with civilian equipment
+
+t2 imp class
+	d4, 2 draws, 5 cards
+	armored vehicle, well-equipped professional soldier
+
+t3 foliot class
+	d6, 3 draws, 10 cards
+	simple stock mechs, backbone of most armies
+
+t4 djinn class
+	d8, 4 draws, 15 cards
+	heavily upgraded mechs, strong solo operatives or platoon leaders
+
+t5 afrit class
+	d10, 5 draws, 20 cards
+	prohibitive cost for most individuals, corps keep a couple on hand for emergencies
+
+t6 marid class
+	d12, 6 draws, 25 cards
+	legendary mechs, only a small number in existence
+
+
+
+=======================
+t0 gear
+
+
+Armor Effects
+	+ storage for misc items
+	+ strength for melee weapons
+	+ armor for damage resist
+	+ evasion for damage dodge
+	+ jump/flight
+	+ faster movespeed
+	+ auto-targetting visor
+
+Misc Items
+	+ frag grenade
+	+ flashbang
+	+ smoke grenade
+	+ breaching charge
+	+ recon drone
+
+
+----------
+Pilot Gear
+
+
+Kevlar Vest (t1 WSI)
+	default card
+	| 1 hull (against shrapnel only)
+	* on taking damage, this card is destroyed, +3 to one roll on your next damage save
+
+Ablative Shielding (t2 WSI)
+    default card
+    | 1 hull
+    | reflective coating: ignore 1 point of thermal damage per attack
+    * on taking damage, this card is destroyed, +3 to one roll on your next damage save
+
+    Plascrete Carapace
+    | reliable: usable if module is destroyed
+	* discard card to ignore one point of incoming damage
+
+
+Hermes Sneakers (t1 nanosoft)
+	default card
+	| passive: +1 movement
+	& during damage save, roll each die with advantage
+
+EVA suit (t2 nanosoft)
+	Agile Practices : default card
+	| passive: +1 evasion
+	| passive: +1 movement
+	* during damage save, roll each die with advantage
+	> Rechargable.
+	> Requires charge. Jump up to [your movment] in any direction.
+	
+	Hard to Pin Down
+	> modifier: grant yourself +3 evasion. If you dodge the attack, move 3 squares.
+
+
+Toolbelt & Hardhat (t1 spacer armor)
+	default card
+	| passive: carry one extra consumables
+	* on damage save, distribute 2 +1s among your rolls
+
+Exoskeleton (t2 spacer armor) 
+	default card
+	| passive: 1 hull
+	| passive: +1 movement
+	| passive: carry one extra consumable
+	* on damage save, distribute 2 +1s among your rolls
+	
+	Leaping Tackle
+	> jump 3, then
+	  hull contest, then grapple
+
+	Leaping Tackle
+	> jump 3, then
+	  hull contest, then grapple
+
+
+Jeeta License (t0 jeeta armor)
+	Outside of combat
+		AI systems still notice you, but are reluctant to report you to authorities.
+		This lets you get through customs, search for rumors without being tracked security cameras.
+		However, this does not let you break into secure compounds or get away with murder.
+		The license is a physical card. If stolen it deactivates until returned.
+	In combat
+		+1 against cyber attacks and lock-on attempts
+
+Cyber Coat (t1 jeeta armor)
+	
+
+Revolver (t0 WSI weapon)
+	"Like the cowboys used, made from the finest-pressed American steel."
+	| 6 bullets (track with a d6)
+	> requires bullet
+	  target enemy in range 5
+	  +0 vs Evasion
+	  on hit, deal 1 kinetic damage, lethal 1 
+	  	(lethal 1: subtract 1 from each damage save die)
+
+
+Stunner (t0 nanosoft weapon)
+	"Fires a fine blue mist of conductive nanoparticles. Pull trigger again to activate electric shock."
+	default card
+	> rechargeable
+	> requires charge
+	  fires in Haiku pattern (3-5-3)
+	  on hit, target loses their next d4 actions (hull reduces)
+
+
+Heavy Wrench (t0 spacer weapon)
+	default card : clobber
+	> target adjacent enemy
+	  +3 vs evasion, deal 1 knockback then 1 kinetic damage (hull reduces)
+	  	("then": one point of hull ignores only the knockback)
+
+Flechete Gun (t1 spacer weapon)
+	default card
+	> target area, cone 2 (3-5)
+	  on hit, deal 1 kinetic damage then 1 knockback (hull reduces)
+
+	misfire
+	> target area, linear 5
+	  recoil 3 (user goes skidding backwards three squares)
+	  on hit, deal 1 kinetic damage then knockback until end of range (max knockback 3) (hull reduces)
+
+
+Laser Pistol (t0 Jeeta weapon)
+	Requires an active Jeeta Liscense to fire.
+
+	default card
+	> target enemy in range 6
+	  +1 vs Evasion
+	  on hit, deal 1 kinetic and 1 thermal damage
+
+Laser Rifle (t1 Jeeta weapon)
+	Requires an active Jeeta Liscense to fire.
+
+	default card
+	> target enemy in range 12
+	  +1 vs Evasion
+	  on hit, deal 1 kinetic and 1 thermal damage
+	  lethal 1 (subtract 1 from each damage save die)
+
+	covering fire
+	"Able to snipe enemies who dart from cover to cover."
+	* on play, choose a default range weapon attack
+	  instead of targetting a unit, target a line with length equal to the attack's range
+	  during the current stack, if an enemy enters the threatened squares, make an attack
+
+
+
+-------------
+Miscellaneus
+
+Frag Grenade ()
+
+Recon Drone ()
+
+Grappling Hook ()
+
+Holo Disk ()
+
+Personal CPU ()
+
+Targetting Visor ()
+
+Power Pack (t0 nanosoft consumable)
+	For "rechargeable" nanosoft equipment.
+	Takes an action to reload, depleted on use.
+
+Med Pack (t0 WSI consumable)
+	> support action
+		> you may use this while incapacitated
+		| unit within range 1, choose 1 effect
+		|   stabilize out-of-action unit
+		|   remove incapacitated condition
+
+		out of combat, heals one wound over the course of an hour
+
+Repair Pack (t0 WSI consumable)
+	Raw material, with a built-in 3D printer, able to be shaped into whatever you need
+	Used to repair modules and mechs.
+	Right now can repair Ablative Shielding, and restore revolver ammo.
+	Will be more useful with full mechs.
+
+
+
+
+Sample Party
+
+	Stunner
+
+
+
+
+
+
+
+
+
+----
+Supharna the Oppulent - t3 boss
+Supharna's Bodyguard - t2 summon
+
+Parkhassian the Exquisite - t2 boss, t1 jeeta
+Night Guard - t1 soldier
+Night Guard Captain - t2 soldier
+Pankriss - t3 heavy mech
+
+Elemvy Guile - t3 guild assasin
+
+
+Relevant Entities
+
+	Supharna's Guild
+
+	Parkhassian's Guild 
+
+	Relentless Spider Guild
+
+
+
+
+
+Characters have
+
+	direct capital
+		secrets
+		gear
+		wealth
+
+	indirect influence
+		popularity 
+		underworld
+		government
+		digital
+
+	These can be exchanged for each other. The exact rates vary.
+
+	Players usually sink these into missions.
+	If the mission goes well, they get a good return.
+
+
+Meeting with Ras Suphrana
+
+	Suphrana has rented out a private room in The House of the Blade Lotus
+	This cost her 3 wealth to rent, but provides a +1 favorable exchange on social capital.
+
+	Middle-manager in a trading guild.
+
+	Offers a contract
+		+12 underworld influence
+		-- in exchange for --
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+Knowledge
+	(night of song) 
+		: social 1
+		A singing, dancing, juggling, etc event.
+		Around 120 people from all over come to watch and perform.
+		Themed as a masquerade ball.
+		Occurs at the Palace of the Night, on this given day.
+
+		: deduce 1
+		The guards will be busy keeping order.
+
+	(parkhassian runs an illegal bussiness)
+		: social 2
+		: insider 1
+
+	(supharna runs an illegal smuggling business)
+		: social 2 
+		: insider 1
+
+	(spider guild is trying to steal the )
+
+
+	[assassin's guild is trying to steal this as well]
+	[assassin's guild is sending an infiltrator on night of song]
+
+	[parkhassian is a decent fighter, but intentionally appears weak]
+	[parkhassian always wears an emp damper]
+	[parkhassian has a decent mech suit on hand for emergencies]
+	[supharna relies on their bodyguards for protection]
+
+	[map information on palace of the night]
+	[there's a river going through the gardens]
+	[there's living quarters in the basement]
+	[there's a secret third story]
+
+	(network of security cameras)
+	(traps in the )
+
+	(vault keycode)
+
+
+Areas
+
+Ground Floor
+	Entrance Bridge into Courtyard into Great Hall
+	From Great Hall
+		Backdoors to the Gardens 
+		Downstairs to level 2
+	Kitchens and Storerooms in left wing
+	Hall of Mirrors in right wing
+
+Gardens
+	Featuring a viewing tower
+	Featuring paths to both Great Hall and Level 2
+	river going through
+
+Level 2
+	servant's quarters
+	guardhouse
+	private quarters
+	private meeting room
+
+Level 3 - the dark level
+	evil rooms
+	store rooms
+	featuring the vault
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+The H0RUS Collective
+	
+	A decentralized group of hackers/anarchists, administered by shadowy AI entity.
+	Mechs are often homemade and heavily modded, with lots of exposed circuitry.
+
+	good: cpu, heat
+	poor: armor, speed
+
+	laser cannons, using heat for damage, nanobot whips
+	
+
+Zaibatsu Heavy Industries
+
+	Based out of Old Earth, got big off of shipyard manufacturing.
+	Mechs are boxy and utilitarian, with reliably consistent performance.
+
+	good: heat, armor
+	poor: cpu, speed
+
+	machine guns, concussion grenades, railguns
+
+
+Jeeta Interplanetary Transport
+	
+	Developped a line of mechs to defend their transport ships from invasion.
+	Mechs are designed to get up-close and personal, good at scrapping within tight spaces.
+
+	good: speed, armor
+	poor: cpu, heat
+
+	shotguns, shrapnel grenades, hackirons
+
+
+Taobao Media Group
+
+	The new kids on the block, running on a hybrid human/AI leadership model.
+	Mechs are highly agile and pack specialized systems, good for scouting and support roles.
+
+	good: speed, cpu
+	poor: heat, armor
+
+	missiles, signal jammers, drones 
+
+
+
+
+
+
+
+
